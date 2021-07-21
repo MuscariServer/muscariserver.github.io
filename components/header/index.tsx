@@ -9,45 +9,6 @@ export default function Header() {
   return (
     <React.Fragment>
       <header id="header" className={styles.header}>
-        <div className={styles.logo}>
-          <Link href="/">
-            <a className={styles.logo}>ハンバーガー♡</a>
-          </Link>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">
-              <a>メニュー</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-              <a>メニュー</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-              <a>メニュー</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-              <a>メニュー</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-              <a>メニュー</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>メニュー</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
         <div className={styles.container}>
           <div className={styles.humburger} onClick={() => menuFunction()}>
             <span className={openMenu ? styles.open : undefined}></span>

@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import '../styles/hamburger.css'
 import type { AppProps } from 'next/app'
 import Header from "../components/header"
 
