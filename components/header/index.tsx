@@ -27,49 +27,8 @@ export default function Header() {
           <li>
             <Link href="/">
               <a>
-                <p className={styles.mainTitle}>メニュー</p>
-                <p className={styles.subTitle}>私のメニュー</p>
+                <p className={styles.mainTitle}>TEST</p>
               </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-            <a>
-              <p className={styles.mainTitle}>メニュー</p>
-              <p className={styles.subTitle}>私のメニュー</p>
-            </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-            <a>
-              <p className={styles.mainTitle}>メニュー</p>
-              <p className={styles.subTitle}>私のメニュー</p>
-            </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-            <a>
-              <p className={styles.mainTitle}>メニュー</p>
-              <p className={styles.subTitle}>私のメニュー</p>
-            </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/">
-            <a>
-              <p className={styles.mainTitle}>メニュー</p>
-              <p className={styles.subTitle}>私のメニュー</p>
-            </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact">
-            <a>
-              <p className={styles.mainTitle}>メニュー</p>
-              <p className={styles.subTitle}>私のメニュー</p>
-            </a>
             </Link>
           </li>
         </ul>
