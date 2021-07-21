@@ -5,7 +5,7 @@ import { compilerOptions } from './tsconfig.json'
 const config: { projects: Config.InitialOptions[] } = {
   projects: [
     {
-      testPathIgnorePatterns: ['<rootDir>/server'],
+      testPathIgnorePatterns: ['<rootDir>/'],
       transform: {
         '^.+\\.tsx$': 'babel-jest',
         '^.+\\.ts$': 'ts-jest'
@@ -17,14 +17,6 @@ const config: { projects: Config.InitialOptions[] } = {
           prefix: '<rootDir>/'
         })
       }
-    },
-    {
-      preset: 'ts-jest',
-      testEnvironment: 'node',
-      testMatch: ['<rootDir>/server/test/**/*.ts'],
-      moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, {
-        prefix: '<rootDir>/'
-      })
     }
   ]
 }

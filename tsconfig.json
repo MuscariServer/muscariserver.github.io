@@ -5,8 +5,8 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
-      "$/*": ["./server/*"],
-      "$prisma/*": ["./server/node_modules/.prisma/*"]
+      "$/*": ["./*"],
+      "$prisma/*": ["./node_modules/.prisma/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
