@@ -1,12 +1,22 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"],
-      "$/*": ["./*"],
-      "$prisma/*": ["./node_modules/.prisma/*"]
+      "~/*": [
+        "./*"
+      ],
+      "$/*": [
+        "./*"
+      ],
+      "$prisma/*": [
+        "./node_modules/.prisma/*"
+      ]
     },
     "allowJs": true,
     "skipLibCheck": true,
@@ -23,5 +33,12 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

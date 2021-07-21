@@ -1,31 +1,22 @@
 {
-  "name": "frourio-app",
+  "name": "muscari-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "npm run migrate:dev && run-p dev:*",
     "dev:client": "next dev -p 8000",
-    "dev:aspida": "aspida --watch",
     "build": "run-p build:client",
-    "prebuild:client": "npm run generate",
     "build:client": "next build && next export",
-    "generate": "run-p generate:*",
-    "generate:aspida": "aspida",
     "lint": "eslint --ext .ts,.js,.tsx . && prettier --check \"./**/*.ts\"",
     "lint:fix": "eslint --ext .ts,.js,.tsx . --fix && prettier --write \"./**/*.ts\"",
     "start": "run-p start:*",
     "start:client": "next start",
-    "pretest": "npm run generate",
-    "test": "jest",
-    "pretypecheck": "npm run generate"
+    "test": "jest"
   },
   "dependencies": {
-    "@aspida/axios": "^1.7.1",
-    "@aspida/swr": "^1.7.1",
     "@prisma/client": "^2.21.2",
     "axios": "^0.21.1",
     "class-validator": "^0.13.1",
-    "frourio": "^0.25.1",
     "next": "^10.1.3",
     "prisma": "^2.21.2",
     "react": "^17.0.2",
