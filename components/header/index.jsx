@@ -13,7 +13,7 @@ export default function Header() {
           <div className={styles.humburger} onClick={() => menuFunction()}>
             <span className={openMenu ? styles.open : undefined}></span>
             <span className={openMenu ? styles.open : undefined}></span>
-            <p className={openMenu ? styles.open : undefined}>Menu</p>
+            <span className={openMenu ? styles.open : undefined}></span>
           </div>
         </div>
       </header>
@@ -22,7 +22,6 @@ export default function Header() {
           <div className={styles.close} onClick={() => menuFunction()}>
             <span></span>
             <span></span>
-            <p>Close</p>
           </div>
           <li>
             <Link href="/">

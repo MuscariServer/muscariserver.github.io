@@ -47,14 +47,10 @@
   right: 40px;
   span {
     background-color: white;
-    width: 30px;
+    width: 25px;
     height: 1px;
     display: block;
-    margin-bottom: 7px;
-    &:nth-child(1) {
-      width: 20px;
-      margin-left: 10px;
-    }
+    margin-bottom: 8px;
   }
   p {
     font-size: 13px;
