@@ -30,6 +30,8 @@ jobs:
         if: steps.client-yarn-cache.outputs.cache-hit != 'true'
       - run: yarn add sass
       - run: yarn build:client
+        env:
+            GITHUB_PAGES: true
       - run: yarn export
       - uses: peaceiris/actions-gh-pages@v3
         with:
