@@ -4,7 +4,10 @@ import Header from "../components/header"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
+    <>
+    <Component {...pageProps}/>
     <Header></Header>
+    </>
   )
 }
 
