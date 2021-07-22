@@ -5,7 +5,7 @@ import Header from "../components/header"
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Component {...pageProps}/>
+    <div>{typeof window === 'undefined' ? null : <Component {...pageProps} />}</div>
     <Header></Header>
     </>
   )

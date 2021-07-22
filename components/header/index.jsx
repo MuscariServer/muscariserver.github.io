@@ -24,7 +24,7 @@ export default function Header() {
             <span></span>
           </div>
           <li>
-            <Link href="/">
+            <Link href="./">
               <a>
                 <p className={styles.mainTitle}>TEST</p>
               </a>
