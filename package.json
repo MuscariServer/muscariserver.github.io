@@ -12,7 +12,8 @@
     "lint:fix": "eslint --ext .ts,.js,.tsx . --fix && prettier --write \"./**/*.ts\"",
     "start": "run-p start:*",
     "start:client": "next start",
-    "test": "jest"
+    "test": "jest",
+    "export": "next export"
   },
   "dependencies": {
     "@prisma/client": "^2.21.2",

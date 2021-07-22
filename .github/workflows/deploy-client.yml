@@ -29,7 +29,8 @@ jobs:
       - run: yarn install
         if: steps.client-yarn-cache.outputs.cache-hit != 'true'
       - run: yarn add sass
-      - run: yarn run build:client
+      - run: yarn build:client
+      - run: yarn export
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
