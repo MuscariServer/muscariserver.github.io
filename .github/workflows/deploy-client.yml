@@ -26,15 +26,9 @@ jobs:
         with:
           path: "node_modules"
           key: client-yarn-${{ hashFiles('yarn.lock') }}
-      - uses: actions/cache@v2
-        id: server-yarn-cache
-        with:
-          path: "server/node_modules"
-          key: server-yarn-${{ hashFiles('server/yarn.lock') }}
       - run: yarn install
         if: steps.client-yarn-cache.outputs.cache-hit != 'true'
-      - run: yarn install --cwd server
-        if: steps.server-yarn-cache.outputs.cache-hit != 'true'
+      - run: yarn add sass
       - run: yarn run build:client
       - uses: peaceiris/actions-gh-pages@v3
         with:
