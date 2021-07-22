@@ -29,12 +29,15 @@ jobs:
       - run: yarn install
         if: steps.client-yarn-cache.outputs.cache-hit != 'true'
       - run: yarn add sass
-      - run: yarn build:client
+      - name: build
+        run: |
+          yarn build
         env:
-            GITHUB_PAGES: true
-      - run: |
-        yarn export
-        touch out/.nojekyll
+          GITHUB_PAGES: true
+      - name: export
+        run: |
+          yarn export
+          touch out/.nojekyll
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
