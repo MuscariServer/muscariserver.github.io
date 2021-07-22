@@ -2,6 +2,7 @@
   "name": "muscari-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://eighty88.github.io/MuscariWeb/",
   "scripts": {
     "dev": "npm run migrate:dev && run-p dev:*",
     "dev:client": "next dev -p 8000",
