@@ -28,7 +28,6 @@ jobs:
           key: client-yarn-${{ hashFiles('yarn.lock') }}
       - run: yarn install
         if: steps.client-yarn-cache.outputs.cache-hit != 'true'
-      - run: yarn add sass
       - name: build
         run: |
           yarn build
@@ -36,9 +35,7 @@ jobs:
           GITHUB_PAGES: true
       - name: export
         run: |
-          yarn export
           touch out/.nojekyll
-          cp _redirects out/
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
