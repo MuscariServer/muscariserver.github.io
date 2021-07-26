@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
+import styles from './index.module.css';
 import { IconContext } from 'react-icons';
 
 // import Icons from 'react-icons'
@@ -55,30 +56,6 @@ const MenuItem = styled(Link)`
     white-space: nowrap;
 `
 
-const ToolTip = styled.span<{ sidebar: boolean }>`
-    position: absolute;
-    display: ${({ sidebar }) => (sidebar ? 'inline-block' : 'none')};
-    top: -20px;
-    left: calc(100% + 15px);
-    z-index: 3;
-    background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: 400;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-    hover {
-        opacity: 1;
-        pointer-events: auto;
-        transition: all 0.4s ease;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-`
-
 const Name = styled.span<{ sidebar: boolean }>`
     display: ${({ sidebar }) => (sidebar ? 'inline-block' : 'none')};
     position: relative;
@@ -110,7 +87,6 @@ const Sidebar: FC = () => {
                     <SidebarMenuWrap>
                         <MenuItem to="/">
                             <AiOutlineHome />
-                            <ToolTip>トップ</ToolTip>
                             <Name sidebar={sidebar}>トップ</Name>
                         </MenuItem>
                     </SidebarMenuWrap>
