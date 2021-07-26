@@ -46,6 +46,17 @@ const SidebarMenuWrap = styled.li`
     left: 23px;
     list-style: none;
     display: inline-block;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+
+    lhover {
+        icon {
+            color: black;
+        }
+        font-color: #000;
+        color: #000;
+        background: #FFF;
+    }
 `;
 
 const MenuItem = styled(Link)`
