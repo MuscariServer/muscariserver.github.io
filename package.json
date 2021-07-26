@@ -3,10 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "run-p dev:*",
+    "dev:client": "next dev -p 8000",
+    "build": "run-p build:client",
+    "build:client": "next build && next export",
+    "lint": "eslint --ext .ts,.js,.tsx . && prettier --check \"./**/*.ts\"",
+    "lint:fix": "eslint --ext .ts,.js,.tsx . --fix && prettier --write \"./**/*.ts\"",
+    "start": "run-p start:*",
+    "start:client": "next start",
+    "test": "jest",
+    "export": "next export"
   },
   "dependencies": {
     "dotenv": "^10.0.0",

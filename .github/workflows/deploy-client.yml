@@ -30,7 +30,7 @@ jobs:
         if: steps.client-yarn-cache.outputs.cache-hit != 'true'
       - name: build
         run: |
-          yarn build
+          yarn build:client
         env:
           GITHUB_PAGES: true
       - uses: peaceiris/actions-gh-pages@v3
