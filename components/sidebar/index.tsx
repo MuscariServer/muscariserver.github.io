@@ -25,7 +25,6 @@ const NavIcon = styled.div<{ sidebar: boolean }>`
     font-size: 2rem;
     right: 25px;
     margin-top: 0.5rem;
-    cursor: pointer;
     visibility: ${({ sidebar }) => (sidebar ? 'hidden' : 'visible')};
     transition: transform 0.5s ease;
 `
@@ -35,7 +34,6 @@ const NavIconClose = styled.div<{ sidebar: boolean }>`
     font-size: 2rem;
     right: 1.75rem;
     margin-top: 0.5rem;
-    cursor: pointer;
     visibility: ${({ sidebar }) => (sidebar ? 'visible' : 'hidden')};
     transition: transform 0.5s ease;
 `
