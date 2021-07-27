@@ -1,7 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import styles from './index.module.css';
 import { IconContext } from 'react-icons';
 
 // import Icons from 'react-icons'
@@ -48,15 +47,6 @@ const SidebarMenuWrap = styled.li`
     display: inline-block;
     border-radius: 5px;
     transition: all 0.5s ease;
-
-    lhover {
-        icon {
-            color: black;
-        }
-        font-color: #000;
-        color: #000;
-        background: #FFF;
-    }
 `;
 
 const MenuItem = styled(Link)`
@@ -67,8 +57,8 @@ const MenuItem = styled(Link)`
     white-space: nowrap;
 `
 
-const Name = styled.span<{ sidebar: boolean }>`
-    display: ${({ sidebar }) => (sidebar ? 'inline-block' : 'none')};
+const Name = styled.span<{ sidebar: boolean, visible: boolean }>`
+    display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
     position: relative;
     margin-left: 12.5px;
     top: -4px;
@@ -81,9 +71,30 @@ const Name = styled.span<{ sidebar: boolean }>`
     transition: all 0.4s;
 `
 
+const HomeIcon = styled(AiOutlineHome)`
+    hover {
+        icon {
+            color: black;
+        }
+        font-color: #000;
+        color: #000;
+        background: #FFF;
+    }
+`
+
 const Sidebar: FC = () => {
     const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
+    const [sidebarV, setSidebarV] = useState(false);
+    const showSidebar = () => {
+        setSidebar(!sidebar)
+        if(sidebarV) {
+            setTimeout(() => {
+                setSidebarV(!sidebarV)
+            }, 400)
+        } else {
+            setSidebarV(!sidebarV)
+        }
+    };
 
     return (
         <IconContext.Provider value={{ color: 'white' }}>
@@ -97,8 +108,8 @@ const Sidebar: FC = () => {
                     </NavIconClose>
                     <SidebarMenuWrap>
                         <MenuItem to="/">
-                            <AiOutlineHome />
-                            <Name sidebar={sidebar}>トップ</Name>
+                            <HomeIcon />
+                            <Name sidebar={sidebar} visible={sidebarV}>トップ</Name>
                         </MenuItem>
                     </SidebarMenuWrap>
                 </SidebarWrap>
