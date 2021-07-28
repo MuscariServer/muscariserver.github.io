@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Sidebar from '../components/sidebar'
 import { HashRouter, Route, Link, Switch } from 'react-router-dom'
+import TopPage from '../components/pages/top'
 
 export default function Home() {
   var id = Math.floor(Math.random() * 18) + 1;
@@ -16,8 +17,9 @@ export default function Home() {
         backgroundSize: `cover`,
         width: '100%',
       }} className={styles.container}>
-          <Route path="/">
-          </Route>
+        <Switch>
+          <Route path="/" exact component={TopPage}/>
+        </Switch>
       </div>
     </HashRouter>
   )
