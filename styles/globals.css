@@ -1,3 +1,13 @@
+body,dl,dt,dd,ul,ol,pre,form,fieldset,input,textarea,p,blockquote{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse: collapse;border:1px solid #333;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+img,abbr,acronym,fieldset{border:0;}
+
 html,
 body {
   padding: 0;

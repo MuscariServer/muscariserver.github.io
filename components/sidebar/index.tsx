@@ -80,10 +80,11 @@ const Name = styled.span<{ sidebar: boolean, visible: boolean }>`
 
 const Discord = styled.iframe<{ sidebar: boolean, visible: boolean }>`
     display: ${({ visible }) => (visible ? 'block' : 'none')};
-    width: ${({ sidebar }) => (sidebar ? '350px' : '80px')};
+    width: ${({ sidebar }) => (sidebar ? '350px' : '40px')};
     position: relative;
     opacity: ${({ sidebar }) => (sidebar ? '1' : '0')};
-    transition: all 0.5s;
+    transition: all 0.45s;
+    border: none;
 `;
 
 const Sidebar: FC = () => {
@@ -107,7 +108,7 @@ const Sidebar: FC = () => {
             <SidebarNav sidebar={sidebar}>
                 <SidebarWrap>
                     <NavIcon onClick={showSidebar} sidebar={sidebar}>
-                        <HiOutlineMenu />
+                        <HiOutlineMenu/>
                     </NavIcon>
                     <NavIconClose onClick={showSidebar} sidebar={sidebar}>
                         <HiOutlineMenuAlt3 />

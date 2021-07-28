@@ -5,6 +5,8 @@ import Sidebar from '../components/sidebar'
 import { HashRouter, Route, Link, Switch } from 'react-router-dom'
 import TopPage from '../components/pages/top'
 import { motion } from 'framer-motion'
+import Links from '../components/pages/links'
+import Donate from '../components/pages/donate'
 
 export default function Home() {
   var id = Math.floor(Math.random() * 17) + 1;
@@ -35,6 +37,8 @@ export default function Home() {
         }} className={styles.container}>
           <Switch>
             <Route path="/" exact component={TopPage} />
+            <Route path="/donate" exact component={Donate} />
+            <Route path="/links" exact component={Links} />
           </Switch>
         </div>
       </HashRouter>
