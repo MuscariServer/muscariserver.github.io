@@ -82,7 +82,7 @@ function Donate() {
                     cursor: 'pointer',
                 }}>寄付者のリスト(クリックで表示)</div>
                 <TableWrapper visible={list}>
-                    <table border="1" align="center">  
+                    <table>
                         <tr>
                             <td>日付</td>
                             <td>寄付者様</td>
