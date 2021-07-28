@@ -10,12 +10,14 @@ export default function Home() {
     <HashRouter>
       <Sidebar></Sidebar>
       <div style={{ 
-        backgroundImage: `url(/images/background/` + id + `.png)`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: `cover`
+        backgroundImage: `linear-gradient(transparent, 90% , white), url(/images/background/` + id + `.png)`,
+        backgroundRepeat: `no-repeat`,
+        backgroundPosition: `center`,
+        backgroundSize: `cover`,
+        width: '100%',
       }} className={styles.container}>
-        <Route path="/">
-        </Route>
+          <Route path="/">
+          </Route>
       </div>
     </HashRouter>
   )
