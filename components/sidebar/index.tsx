@@ -7,6 +7,13 @@ import { IconContext } from 'react-icons';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineHome } from 'react-icons/ai';
+import { GiAnvilImpact } from 'react-icons/gi';
+import { AiOutlineImport } from 'react-icons/ai';
+import { BiCalendarEvent } from 'react-icons/bi';
+import { FaDonate } from 'react-icons/fa';
+import { AiOutlineInfoCircle } from 'react-icons/ai';
+import { MdDeveloperMode } from 'react-icons/md';
+import { BiLinkExternal } from 'react-icons/bi';
 
 const SidebarNav = styled.div<{ sidebar: boolean }>`
     width: 250px;
@@ -51,42 +58,41 @@ const SidebarMenuWrap = styled.li`
 
 const MenuItem = styled(Link)`
     font-size: 2rem;
-    position: absolute;
-    display: inline-block;
+    position: relative;
+    display: block;
     overflow-x: auto;
     white-space: nowrap;
+    height: 50px;
 `
 
 const Name = styled.span<{ sidebar: boolean, visible: boolean }>`
-    display: ${({ visible }) => (visible ? 'inline-block' : 'none')};
+    display: ${({ visible }) => (visible ? 'inline flow-root' : 'none')};
     position: relative;
     margin-left: 12.5px;
-    top: -4px;
-    font-size: 1.75rem;
+    top: -5px;
+    font-size: 1.5rem;
     color: gray;
     color: #fff;
     white-space: nowrap;
     opacity: ${({ sidebar }) => (sidebar ? '1' : '0')};
-    pointer-events: none;
     transition: all 0.4s;
 `
 
-const HomeIcon = styled(AiOutlineHome)`
-    hover {
-        icon {
-            color: black;
-        }
-        font-color: #000;
-        color: #000;
-        background: #FFF;
-    }
-`
+const Discord = styled.iframe<{ sidebar: boolean, visible: boolean }>`
+    display: ${({ visible }) => (visible ? 'block' : 'none')};
+    width: ${({ sidebar }) => (sidebar ? '350px' : '80px')};
+    position: relative;
+    opacity: ${({ sidebar }) => (sidebar ? '1' : '0')};
+    transition: all 0.5s;
+`;
 
 const Sidebar: FC = () => {
     const [sidebar, setSidebar] = useState(false);
     const [sidebarV, setSidebarV] = useState(false);
     const showSidebar = () => {
-        setSidebar(!sidebar)
+        setTimeout(() => {
+            setSidebar(!sidebar)
+        }, 10)
         if(sidebarV) {
             setTimeout(() => {
                 setSidebarV(!sidebarV)
@@ -108,9 +114,38 @@ const Sidebar: FC = () => {
                     </NavIconClose>
                     <SidebarMenuWrap>
                         <MenuItem to="/">
-                            <HomeIcon />
+                            <AiOutlineHome />
                             <Name sidebar={sidebar} visible={sidebarV}>トップ</Name>
                         </MenuItem>
+                        <MenuItem to="/mods">
+                            <GiAnvilImpact />
+                            <Name sidebar={sidebar} visible={sidebarV}>導入Mod</Name>
+                        </MenuItem>
+                        <MenuItem to="/join">
+                            <AiOutlineImport />
+                            <Name sidebar={sidebar} visible={sidebarV}>参加方法</Name>
+                        </MenuItem>
+                        <MenuItem to="/events">
+                            <BiCalendarEvent />
+                            <Name sidebar={sidebar} visible={sidebarV}>イベント</Name>
+                        </MenuItem>
+                        <MenuItem to="/donate">
+                            <FaDonate />
+                            <Name sidebar={sidebar} visible={sidebarV}>寄付</Name>
+                        </MenuItem>
+                        <MenuItem to="/info">
+                            <AiOutlineInfoCircle />
+                            <Name sidebar={sidebar} visible={sidebarV}>情報</Name>
+                        </MenuItem>
+                        <MenuItem to="/recruit">
+                            <MdDeveloperMode />
+                            <Name sidebar={sidebar} visible={sidebarV}>開発者募集</Name>
+                        </MenuItem>
+                        <MenuItem to="/links">
+                            <BiLinkExternal />
+                            <Name sidebar={sidebar} visible={sidebarV}>リンク集</Name>
+                        </MenuItem>
+                        <Discord sidebar={sidebar} visible={sidebarV} className="discord" src="https://discord.com/widget?id=419146900441137173&theme=dark" width="350" height="420" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></Discord>
                     </SidebarMenuWrap>
                 </SidebarWrap>
             </SidebarNav>
