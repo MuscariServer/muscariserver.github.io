@@ -8,6 +8,7 @@ import {
     useLocation,
 } from 'react-router-dom';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Button = styled.button`
     background-color: transparent;
@@ -34,7 +35,25 @@ const Button = styled.button`
 function TopPage() {
     const history = useHistory();
     return (
-        <>
+        <motion.div
+            animate={{
+                x: 0,
+                opacity: 1
+            }}
+            initial={{
+                opacity: 0
+            }}
+            exit={{
+                opacity: 0
+            }}
+            transition={{
+                duration: 0.2
+            }}
+
+            style={{
+                textAlign: 'center',
+            }}
+        >
             <div style={{
                 color: `#fff`,
                 fontSize: `2rem`,
@@ -44,7 +63,7 @@ function TopPage() {
             <Button onClick={() => history.push('/join')}>
                 今すぐ参加!!
             </Button>
-        </>
+        </motion.div>
     )
 }
 
