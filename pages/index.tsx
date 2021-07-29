@@ -29,7 +29,7 @@ export default function Home() {
       <HashRouter>
         <Sidebar></Sidebar>
         <div style={{
-          backgroundImage: `linear-gradient(transparent, 90% , white), url(` + (process.env.GITHUB_PAGES ? "" : "MuscariWeb") + `/images/background/` + id + `.png)`,
+          backgroundImage: `linear-gradient(transparent, 90% , white), url(images/background/` + id + `.png)`,
           backgroundRepeat: `no-repeat`,
           backgroundPosition: `center`,
           backgroundSize: `cover`,
