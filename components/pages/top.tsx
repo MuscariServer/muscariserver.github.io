@@ -60,7 +60,7 @@ function TopPage() {
             }}>
                 <h1>Muscari Server</h1>
             </div>
-            <Button onClick={() => history.push('/join')}>
+            <Button onClick={() => history.push('/join/1')}>
                 今すぐ参加!!
             </Button>
         </motion.div>

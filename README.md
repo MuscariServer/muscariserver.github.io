@@ -9,6 +9,11 @@ npm run dev
 yarn dev
 ```
 
+ビルド方法
+```bash
+yarn build
+```
+
 ## 変更可能なところ
 
 ./components/pages/donates/index.tsxをいじることで寄付者情報を変更可能<br>

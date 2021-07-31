@@ -122,7 +122,7 @@ const Sidebar: FC = () => {
                             <GiAnvilImpact />
                             <Name sidebar={sidebar} visible={sidebarV}>導入Mod</Name>
                         </MenuItem>
-                        <MenuItem to="/join">
+                        <MenuItem to="/join/1">
                             <AiOutlineImport />
                             <Name sidebar={sidebar} visible={sidebarV}>参加方法</Name>
                         </MenuItem>

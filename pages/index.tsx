@@ -40,11 +40,11 @@ export default function Home() {
         }} className={styles.container}>
           <Switch>
             <Route path="/" exact component={TopPage} />
-            <Route path="/join" exact component={Join} />
-            <Route path="/events" exact component={Events} />
-            <Route path="/donate" exact component={Donate} />
-            <Route path="/recruit" exact component={Recruit} />
-            <Route path="/links" exact component={Links} />
+            <Route path="/join/:page" component={Join} />
+            <Route path="/events" component={Events} />
+            <Route path="/donate" component={Donate} />
+            <Route path="/recruit" component={Recruit} />
+            <Route path="/links" component={Links} />
           </Switch>
         </div>
       </HashRouter>
