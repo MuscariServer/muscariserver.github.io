@@ -14,6 +14,8 @@ import { BiCommentError } from 'react-icons/bi'
 import { GoFile } from 'react-icons/go'
 import { HiOutlineDatabase } from 'react-icons/hi'
 
+import Rules from './rules'
+
 function Info() {
     return (
         <motion.div
@@ -51,6 +53,7 @@ function Info() {
                     <Tab><GoFile/> サーバースペック</Tab>
                     <Tab><HiOutlineDatabase/> 記録</Tab>
                 </TabList>
+                <TabPanel><Rules/></TabPanel>
             </Tabs>
         </motion.div>
     )
