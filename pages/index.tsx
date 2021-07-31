@@ -10,6 +10,7 @@ import Donate from '../components/pages/donate'
 import Join from '../components/pages/join'
 import Recruit from '../components/pages/recruit'
 import Events from '../components/pages/events'
+import Mods from '../components/pages/mods'
 
 export default function Home() {
   var id = Math.floor(Math.random() * 17) + 1;
@@ -37,9 +38,11 @@ export default function Home() {
           backgroundPosition: `center`,
           backgroundSize: `cover`,
           width: '100%',
+          left: '40px',
         }} className={styles.container}>
           <Switch>
             <Route path="/" exact component={TopPage} />
+            <Route path="/mods" component={Mods} />
             <Route path="/join/:page" component={Join} />
             <Route path="/events" component={Events} />
             <Route path="/donate" component={Donate} />
