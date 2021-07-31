@@ -12,7 +12,7 @@ import { AiOutlineImport } from 'react-icons/ai';
 import { BiCalendarEvent } from 'react-icons/bi';
 import { FaDonate } from 'react-icons/fa';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
-import { MdDeveloperMode } from 'react-icons/md';
+import { HiOutlineCode } from 'react-icons/hi';
 import { BiLinkExternal } from 'react-icons/bi';
 
 const SidebarNav = styled.div<{ sidebar: boolean }>`
@@ -139,7 +139,7 @@ const Sidebar: FC = () => {
                             <Name sidebar={sidebar} visible={sidebarV}>情報</Name>
                         </MenuItem>
                         <MenuItem to="/recruit">
-                            <MdDeveloperMode />
+                            <HiOutlineCode />
                             <Name sidebar={sidebar} visible={sidebarV}>開発者募集</Name>
                         </MenuItem>
                         <MenuItem to="/links">

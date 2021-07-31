@@ -49,7 +49,7 @@ function Mods() {
             <h1>導入Mod</h1>
             <h6>Mod名クリックでWikiに飛びます<br/>(一部攻略動画を含む)</h6>
                 <Tabs>
-                    <TabList activeTabClassName="bg-tabs">
+                    <TabList>
                         <Tab><GiGears /> 工業系</Tab>
                         <Tab><FaMagic /> 魔術系</Tab>
                         <Tab><GiWheat /> 農業系</Tab>

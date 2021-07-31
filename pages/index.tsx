@@ -11,6 +11,7 @@ import Join from '../components/pages/join'
 import Recruit from '../components/pages/recruit'
 import Events from '../components/pages/events'
 import Mods from '../components/pages/mods'
+import Info from '../components/pages/info'
 
 export default function Home() {
   var id = Math.floor(Math.random() * 17) + 1;
@@ -46,6 +47,7 @@ export default function Home() {
             <Route path="/join/:page" component={Join} />
             <Route path="/events" component={Events} />
             <Route path="/donate" component={Donate} />
+            <Route path="/info" component={Info} />
             <Route path="/recruit" component={Recruit} />
             <Route path="/links" component={Links} />
           </Switch>
