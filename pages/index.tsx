@@ -9,6 +9,7 @@ import Links from '../components/pages/links'
 import Donate from '../components/pages/donate'
 import Join from '../components/pages/join'
 import Recruit from '../components/pages/recruit'
+import Events from '../components/pages/events'
 
 export default function Home() {
   var id = Math.floor(Math.random() * 17) + 1;
@@ -40,6 +41,7 @@ export default function Home() {
           <Switch>
             <Route path="/" exact component={TopPage} />
             <Route path="/join" exact component={Join} />
+            <Route path="/events" exact component={Events} />
             <Route path="/donate" exact component={Donate} />
             <Route path="/recruit" exact component={Recruit} />
             <Route path="/links" exact component={Links} />
