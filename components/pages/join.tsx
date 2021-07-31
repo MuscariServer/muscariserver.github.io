@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function JoinPage() {
+function Join() {
     return (
         <motion.div
             animate={{
@@ -19,16 +19,15 @@ function JoinPage() {
 
             style={{
                 textAlign: 'center',
-            }}
-        >
-            <div style={{
                 color: `#fff`,
                 fontSize: `2rem`,
-            }}>
-                <h1>参加方法</h1>
-            </div>
+            }}
+        >
+            <h1>
+                参加方法
+            </h1>
         </motion.div>
     )
 }
 
-export default JoinPage;
+export default Join;

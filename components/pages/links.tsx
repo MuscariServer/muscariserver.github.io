@@ -1,7 +1,5 @@
-import React, { FC, useState } from 'react';
-import { Link } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
-import { IconContext } from 'react-icons';
+import React from 'react';
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const Items = styled.div`

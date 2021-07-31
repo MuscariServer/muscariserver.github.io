@@ -1,9 +1,6 @@
-import React, { FC, useState } from 'react';
-import { Link } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
-import { IconContext } from 'react-icons';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Table } from "antd";
+import styled from 'styled-components';
 import Donates from './donates';
 
 const DIV = styled.div`
