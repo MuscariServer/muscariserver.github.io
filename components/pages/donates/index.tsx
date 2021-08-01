@@ -1,7 +1,7 @@
 import { Table } from "antd";
 import React from "react";
 
-const columns2 = [
+const columns = [
     {
         title: '日付',
         dataIndex: 'date',
@@ -88,7 +88,7 @@ class Donates extends React.Component {
         return (
             <div>
                 <Table
-                    columns={columns2}
+                    columns={columns}
                     dataSource={data}
                     size="small"
                     bordered={true}

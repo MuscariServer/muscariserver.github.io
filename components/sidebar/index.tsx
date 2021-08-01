@@ -9,7 +9,7 @@ import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineHome } from 'react-icons/ai';
 import { GiAnvilImpact } from 'react-icons/gi';
 import { AiOutlineImport } from 'react-icons/ai';
-import { BiCalendarEvent } from 'react-icons/bi';
+import { BsCalendar } from 'react-icons/bs'
 import { FaDonate } from 'react-icons/fa';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { HiOutlineCode } from 'react-icons/hi';
@@ -127,7 +127,7 @@ const Sidebar: FC = () => {
                             <Name sidebar={sidebar} visible={sidebarV}>参加方法</Name>
                         </MenuItem>
                         <MenuItem to="/events">
-                            <BiCalendarEvent />
+                            <BsCalendar />
                             <Name sidebar={sidebar} visible={sidebarV}>イベント</Name>
                         </MenuItem>
                         <MenuItem to="/donate">

@@ -1,8 +1,23 @@
+import { motion } from "framer-motion";
+
 function Rules() {
     return (
-        <div style={{
+        <motion.div style={{
             background: 'rgba(0, 0, 0, 0.5)',
             padding: '1em',
+        }}
+        animate={{
+            x: 0,
+            opacity: 1
+        }}
+        initial={{
+            opacity: 0
+        }}
+        exit={{
+            opacity: 0
+        }}
+        transition={{
+            duration: 0.2
         }}>
             <h1>ルール</h1>
             <div style={{
@@ -59,7 +74,7 @@ function Rules() {
                     <li>経済関連以外の禁止事項を行った場合、運営陣の裁量により処罰の内容が決定されます。</li>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

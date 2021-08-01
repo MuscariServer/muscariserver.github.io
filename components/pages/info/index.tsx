@@ -8,13 +8,18 @@ import { GiDiceFire } from 'react-icons/gi'
 import { BsFileEarmarkCode } from 'react-icons/bs'
 import { ImStatsDots } from 'react-icons/im'
 import { GoTerminal } from 'react-icons/go'
-import { BsCalendar } from 'react-icons/bs'
 import { BsQuestionDiamond } from 'react-icons/bs'
 import { BiCommentError } from 'react-icons/bi'
 import { GoFile } from 'react-icons/go'
 import { HiOutlineDatabase } from 'react-icons/hi'
 
 import Rules from './rules'
+import Spec from "./spec";
+import Bugs from "./bugs";
+import Devs from "./devs";
+import Logs from "./logs";
+import FAQ from "./faq";
+import Stats from "./stats";
 
 function Info() {
     return (
@@ -35,8 +40,13 @@ function Info() {
 
             style={{
                 textAlign: 'center',
+                display: 'inline-block',
+                position: 'absolute',
+                top: '10px',
                 color: `#fff`,
                 fontSize: `1rem`,
+                overflow: 'auto',
+                verticalAlign: 'top',
             }}
         >
             <Tabs>
@@ -47,13 +57,21 @@ function Info() {
                     <Tab><BsFileEarmarkCode/> 開発陣一覧</Tab>
                     <Tab><ImStatsDots/> ムスカリ統計局</Tab>
                     <Tab><GoTerminal/> コマンド一覧</Tab>
-                    <Tab><BsCalendar/> 予定表</Tab>
                     <Tab><BsQuestionDiamond/> よくある質問</Tab>
                     <Tab><BiCommentError/> 既知のバグ</Tab>
                     <Tab><GoFile/> サーバースペック</Tab>
                     <Tab><HiOutlineDatabase/> 記録</Tab>
                 </TabList>
                 <TabPanel><Rules/></TabPanel>
+                <TabPanel></TabPanel>
+                <TabPanel></TabPanel>
+                <TabPanel><Devs/></TabPanel>
+                <TabPanel><Stats/></TabPanel>
+                <TabPanel></TabPanel>
+                <TabPanel><FAQ/></TabPanel>
+                <TabPanel><Bugs/></TabPanel>
+                <TabPanel><Spec/></TabPanel>
+                <TabPanel><Logs/></TabPanel>
             </Tabs>
         </motion.div>
     )
