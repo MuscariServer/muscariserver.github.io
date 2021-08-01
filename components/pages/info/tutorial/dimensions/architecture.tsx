@@ -17,7 +17,7 @@ function Architecture() {
                 duration: 0.2
             }}>
             <div style={{
-                backgroundImage: `url(images/dimension/Arc.png)`,
+                backgroundImage: `url(images/dimension/arc.png)`,
                 backgroundSize: 'cover',
                 display: 'inline-block',
                 textAlign: 'left',

@@ -17,7 +17,7 @@ function Capture() {
                 duration: 0.2
             }}>
             <div style={{
-                backgroundImage: `url(images/dimension/Capture.png)`,
+                backgroundImage: `url(images/dimension/capture.png)`,
                 display: 'inline-block',
                 backgroundSize: 'cover',
                 textAlign: 'left',

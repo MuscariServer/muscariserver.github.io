@@ -17,7 +17,7 @@ function End() {
                 duration: 0.2
             }}>
             <div style={{
-                backgroundImage: `url(images/dimension/End.png)`,
+                backgroundImage: `url(images/dimension/end.png)`,
                 display: 'inline-block',
                 textAlign: 'left',
                 verticalAlign: 'bottom',

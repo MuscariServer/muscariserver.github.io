@@ -17,7 +17,7 @@ function Resources() {
                 duration: 0.2
             }}>
             <div style={{
-                backgroundImage: `url(images/dimension/Resource.png)`,
+                backgroundImage: `url(images/dimension/resource.png)`,
                 display: 'inline-block',
                 textAlign: 'left',
                 verticalAlign: 'bottom',
