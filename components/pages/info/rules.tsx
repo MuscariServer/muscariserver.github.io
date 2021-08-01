@@ -46,6 +46,7 @@ function Rules() {
             <div style={{
                 textAlign: 'left',
                 display: 'inline-block',
+                verticalAlign: 'top',
             }}>
                 <h2>第２条(補填)</h2>
                 <ul>
