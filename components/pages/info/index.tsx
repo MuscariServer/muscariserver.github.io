@@ -20,6 +20,7 @@ import Devs from "./devs";
 import Logs from "./logs";
 import FAQ from "./faq";
 import Stats from "./stats";
+import Commands from "./commands";
 
 function Info() {
     return (
@@ -67,7 +68,7 @@ function Info() {
                 <TabPanel></TabPanel>
                 <TabPanel><Devs/></TabPanel>
                 <TabPanel><Stats/></TabPanel>
-                <TabPanel></TabPanel>
+                <TabPanel><Commands/></TabPanel>
                 <TabPanel><FAQ/></TabPanel>
                 <TabPanel><Bugs/></TabPanel>
                 <TabPanel><Spec/></TabPanel>
