@@ -23,19 +23,15 @@ function Devs() {
             width: '100%',
             height: '100%',
         }}
-        animate={{
-            x: 0,
-            opacity: 1
-        }}
-        initial={{
-            opacity: 0
-        }}
-        exit={{
-            opacity: 0
-        }}
-        transition={{
-            duration: 0.2
-        }}>
+            animate={{
+                opacity: 1
+            }}
+            initial={{
+                opacity: 0
+            }}
+            transition={{
+                duration: 0.2
+            }}>
             <h1>開発陣一覧</h1>
             <table style={{
                 color: '#000',

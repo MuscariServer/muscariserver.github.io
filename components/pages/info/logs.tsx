@@ -67,19 +67,15 @@ function Logs() {
             fontSize: `1rem`,
             overflow: 'auto',
         }}
-        animate={{
-            x: 0,
-            opacity: 1
-        }}
-        initial={{
-            opacity: 0
-        }}
-        exit={{
-            opacity: 0
-        }}
-        transition={{
-            duration: 0.2
-        }}>
+            animate={{
+                opacity: 1
+            }}
+            initial={{
+                opacity: 0
+            }}
+            transition={{
+                duration: 0.2
+            }}>
             <Calendar locale="ja-JP" value={new Date()} tileContent={getTileContent} />
         </motion.div>
     )

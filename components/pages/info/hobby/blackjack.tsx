@@ -8,13 +8,9 @@ function BlackJack() {
             height: '100%',
         }}
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
@@ -38,7 +34,7 @@ function BlackJack() {
                     <h2>ブラックジャック</h2>
                     マイクラ内でブラックジャックが楽しめます。<br />
                     お金を賭けてプレイヤー同士で遊ぶことができます。<br />
-                    ※テーブルのオーナーがディーラーになります。<br/>　ディーラーはヒットやスタンドといった行動はできません。<br />
+                    ※テーブルのオーナーがディーラーになります。<br />　ディーラーはヒットやスタンドといった行動はできません。<br />
                 </div>
             </div>
         </motion.div>

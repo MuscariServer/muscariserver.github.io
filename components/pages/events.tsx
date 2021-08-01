@@ -23,13 +23,9 @@ function Events() {
     return (
         <motion.div
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{

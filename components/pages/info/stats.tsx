@@ -10,20 +10,20 @@ function Stats() {
             height: '100%',
         }}
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
                 duration: 0.2
             }}>
             <h1>ムスカリ統計局</h1>
-            <div>
+            <div style={{
+                padding: '1em',
+                background: 'rgba(0, 0, 0, 0.5)',
+                borderRadius: '5px',
+            }}>
                 <div style={{
                     textAlign: 'left',
                     display: 'inline-block',

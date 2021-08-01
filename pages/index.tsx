@@ -14,7 +14,7 @@ import Mods from '../components/pages/mods'
 import Info from '../components/pages/info'
 
 export default function Home() {
-  var id = Math.floor(Math.random() * 17) + 1;
+  var id = Math.floor(Math.random() * 23);
   return (
     <motion.div
       animate={{

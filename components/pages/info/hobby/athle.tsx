@@ -8,7 +8,6 @@ function Athle() {
             height: '100%',
         }}
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{

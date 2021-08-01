@@ -26,13 +26,9 @@ function Donate() {
     return (
         <motion.div
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
@@ -80,7 +76,7 @@ function Donate() {
                     cursor: 'pointer',
                 }}>寄付者のリスト(クリックで表示)</div>
                 <TableWrapper visible={list} align="center">
-                    <Donates/>
+                    <Donates />
                 </TableWrapper>
                 <br />
             </DIV>

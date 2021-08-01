@@ -22,18 +22,15 @@ import FAQ from "./faq";
 import Stats from "./stats";
 import Commands from "./commands";
 import Hobby from "./hobby";
+import Tutorial from "./tutorial";
 
 function Info() {
     return (
         <motion.div
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
@@ -53,27 +50,27 @@ function Info() {
         >
             <Tabs>
                 <TabList>
-                    <Tab><AiOutlineFileText/> ルール</Tab>
-                    <Tab><HiOutlineDocumentAdd/> チュートリアル</Tab>
-                    <Tab><GiDiceFire/> 娯楽施設</Tab>
-                    <Tab><BsFileEarmarkCode/> 開発陣一覧</Tab>
-                    <Tab><ImStatsDots/> ムスカリ統計局</Tab>
-                    <Tab><GoTerminal/> コマンド一覧</Tab>
-                    <Tab><BsQuestionDiamond/> よくある質問</Tab>
-                    <Tab><BiCommentError/> 既知のバグ</Tab>
-                    <Tab><GoFile/> サーバースペック</Tab>
-                    <Tab><HiOutlineDatabase/> 記録</Tab>
+                    <Tab><AiOutlineFileText /> ルール</Tab>
+                    <Tab><HiOutlineDocumentAdd /> チュートリアル</Tab>
+                    <Tab><GiDiceFire /> 娯楽施設</Tab>
+                    <Tab><BsFileEarmarkCode /> 開発陣一覧</Tab>
+                    <Tab><ImStatsDots /> ムスカリ統計局</Tab>
+                    <Tab><GoTerminal /> コマンド一覧</Tab>
+                    <Tab><BsQuestionDiamond /> よくある質問</Tab>
+                    <Tab><BiCommentError /> 既知のバグ</Tab>
+                    <Tab><GoFile /> サーバースペック</Tab>
+                    <Tab><HiOutlineDatabase /> 記録</Tab>
                 </TabList>
-                <TabPanel><Rules/></TabPanel>
-                <TabPanel></TabPanel>
-                <TabPanel><Hobby/></TabPanel>
-                <TabPanel><Devs/></TabPanel>
-                <TabPanel><Stats/></TabPanel>
-                <TabPanel><Commands/></TabPanel>
-                <TabPanel><FAQ/></TabPanel>
-                <TabPanel><Bugs/></TabPanel>
-                <TabPanel><Spec/></TabPanel>
-                <TabPanel><Logs/></TabPanel>
+                <TabPanel><Rules /></TabPanel>
+                <TabPanel><Tutorial /></TabPanel>
+                <TabPanel><Hobby /></TabPanel>
+                <TabPanel><Devs /></TabPanel>
+                <TabPanel><Stats /></TabPanel>
+                <TabPanel><Commands /></TabPanel>
+                <TabPanel><FAQ /></TabPanel>
+                <TabPanel><Bugs /></TabPanel>
+                <TabPanel><Spec /></TabPanel>
+                <TabPanel><Logs /></TabPanel>
             </Tabs>
         </motion.div>
     )

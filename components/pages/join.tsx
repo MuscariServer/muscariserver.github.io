@@ -1,11 +1,11 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-  useHistory
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams,
+    useHistory
 } from "react-router-dom";
 
 import { motion } from "framer-motion";
@@ -23,15 +23,15 @@ function Join() {
     let message = "";
     let href = "";
 
-    if(page === "0") {
+    if (page === "0") {
         history.push("/join/1");
     }
 
-    if(page === "15") {
+    if (page === "15") {
         history.push("/join/14");
     }
 
-    switch(pageID) {
+    switch (pageID) {
         case 1:
             image = "images/discord/discord.png";
             message = "当サーバーでは遊ぶためにDiscord連携が必要となっております。\n通話の強要は一切ありませんのでご安心下さい。\nまた、これ以降でわからないことがあったらDiscordまたはお問い合わせフォームで質問して下さい。"
@@ -95,13 +95,9 @@ function Join() {
     return (
         <motion.div
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
@@ -119,19 +115,21 @@ function Join() {
             }}>
                 参加方法
             </h1>
-            
+
             <div style={{
                 display: 'inline-block',
                 position: 'fixed',
                 top: '500px',
                 cursor: 'pointer',
                 fontSize: `3rem`,
-            }} onClick={()=>{
+            }} onClick={() => {
                 history.push("/join/" + (pageID - 1));
-            }}>＜</div>
+            }} className="shadow">＜</div>
             <div id="canvas" style={{
                 display: 'inline-block',
+                position: 'relative',
                 width: width + 'px',
+                margin: '50px',
                 height: '750px',
                 transition: 'all 0.2s ease-in-out',
                 opacity: 1,
@@ -139,12 +137,19 @@ function Join() {
                 <div id="thumbnail">
                     {ImageD(href, image)}
                 </div>
-                <div id="description">
-                {
-                    message.split('\n').map((str, index) => (
-                        <React.Fragment key={index}>{str}<br /></React.Fragment>
-                    ))
-                }
+                <div id="description" style={{
+                    background: 'rgba(0, 0, 0, 0.5)',
+                    padding: '10px',
+                    width: '500px',
+                    textAlign: 'center',
+                    display: 'inline-block',
+                    borderRadius: '20px',
+                }}>
+                    {
+                        message.split('\n').map((str, index) => (
+                            <React.Fragment key={index}>{str}<br /></React.Fragment>
+                        ))
+                    }
                 </div>
             </div>
             <div style={{
@@ -153,9 +158,9 @@ function Join() {
                 top: '500px',
                 cursor: 'pointer',
                 fontSize: `3rem`,
-            }} onClick={()=>{
+            }} onClick={() => {
                 history.push("/join/" + (pageID + 1));
-            }}>＞</div>
+            }} className="shadow">＞</div>
         </motion.div>
     )
 }

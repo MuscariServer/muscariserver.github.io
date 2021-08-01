@@ -21,13 +21,9 @@ function Links() {
     return (
         <motion.div
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
@@ -43,18 +39,18 @@ function Links() {
                     <a href="https://minecraft.jp/servers/muscari.fun"><img src="./images/links/Diamond.png" width="200" height="200" /><br />Minecraft.jp</a>
                 </Items>
                 <Items>
-                    <a href="https://monocraft.net/servers/kypYX49aMGbHh1i47yH5"><img src="./images/links/monocraft.png" width="200" height="200"  /><br />Monocraft</a>
+                    <a href="https://monocraft.net/servers/kypYX49aMGbHh1i47yH5"><img src="./images/links/monocraft.png" width="200" height="200" /><br />Monocraft</a>
                 </Items>
                 <Items>
-                    <a href="https://twitter.com/taisa_ism"><img src="./images/links/twitter.png" width="200" height="200"  /><br />Twitter</a>
+                    <a href="https://twitter.com/taisa_ism"><img src="./images/links/twitter.png" width="200" height="200" /><br />Twitter</a>
                 </Items>
             </DIV>
             <DIV>
                 <Items>
-                    <a href="https://discord.gg/mTbgeP8"><img src="./images/links/discord.png" width="200" height="200"  /><br />Discord</a>
+                    <a href="https://discord.gg/mTbgeP8"><img src="./images/links/discord.png" width="200" height="200" /><br />Discord</a>
                 </Items>
                 <Items>
-                    <a href="https://forms.gle/2GVBaVZKpyjoHhGu8"><img src="./images/links/google-forms.png" width="200" height="200"  /><br />お問い合わせ</a>
+                    <a href="https://forms.gle/2GVBaVZKpyjoHhGu8"><img src="./images/links/google-forms.png" width="200" height="200" /><br />お問い合わせ</a>
                 </Items>
             </DIV>
         </motion.div>

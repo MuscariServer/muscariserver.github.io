@@ -10,13 +10,9 @@ function Hobby() {
     return (
         <motion.div
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
@@ -40,10 +36,10 @@ function Hobby() {
                     <Tab>スロットマシン</Tab>
                     <Tab>ガチャ</Tab>
                 </TabList>
-                <TabPanel><Athle/></TabPanel>
-                <TabPanel><BlackJack/></TabPanel>
-                <TabPanel><Slot/></TabPanel>
-                <TabPanel><Gacha/></TabPanel>
+                <TabPanel><Athle /></TabPanel>
+                <TabPanel><BlackJack /></TabPanel>
+                <TabPanel><Slot /></TabPanel>
+                <TabPanel><Gacha /></TabPanel>
             </Tabs>
         </motion.div>
     )

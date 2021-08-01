@@ -7,21 +7,17 @@ function FAQ() {
             width: '100%',
             height: '100%',
         }}
-        animate={{
-            x: 0,
-            opacity: 1
-        }}
-        initial={{
-            opacity: 0
-        }}
-        exit={{
-            opacity: 0
-        }}
-        transition={{
-            duration: 0.2
-        }}>
+            animate={{
+                opacity: 1
+            }}
+            initial={{
+                opacity: 0
+            }}
+            transition={{
+                duration: 0.2
+            }}>
             <h1>よくある質問</h1>
-            当サーバーのFAQは2回以上お問合わせフォームで寄せられた質問のみ掲載します。<br/>
+            当サーバーのFAQは2回以上お問合わせフォームで寄せられた質問のみ掲載します。<br />
             質問はまだありません。
         </motion.div>
     );

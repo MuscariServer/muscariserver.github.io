@@ -6,19 +6,15 @@ function Rules() {
             background: 'rgba(0, 0, 0, 0.5)',
             padding: '1em',
         }}
-        animate={{
-            x: 0,
-            opacity: 1
-        }}
-        initial={{
-            opacity: 0
-        }}
-        exit={{
-            opacity: 0
-        }}
-        transition={{
-            duration: 0.2
-        }}>
+            animate={{
+                opacity: 1
+            }}
+            initial={{
+                opacity: 0
+            }}
+            transition={{
+                duration: 0.2
+            }}>
             <h1>ルール</h1>
             <div style={{
                 textAlign: 'left',
@@ -52,10 +48,10 @@ function Rules() {
                     <li>既知のバグを発生させようとする行為</li>
                     <li>MuscariServerModpack及び推奨されているもの以外のMODの導入※2</li>
                     <li>複数アカウントの使用</li>
-                    <br/>
-                    ※1 Orb of Skillsの取引、複数アカウントの使用による擬似的な複数スキル獲得　など<br/>
-                    ※1 不正なスキルの獲得はコマンドで確認が可能です。<br/>
-                    ※2 Discordで運営にかけあうことで許可が降りる場合もあります<br/>
+                    <br />
+                    ※1 Orb of Skillsの取引、複数アカウントの使用による擬似的な複数スキル獲得　など<br />
+                    ※1 不正なスキルの獲得はコマンドで確認が可能です。<br />
+                    ※2 Discordで運営にかけあうことで許可が降りる場合もあります<br />
                 </ul>
             </div>
             <div style={{

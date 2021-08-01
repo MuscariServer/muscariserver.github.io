@@ -8,13 +8,9 @@ function Gacha() {
             height: '100%',
         }}
             animate={{
-                x: 0,
                 opacity: 1
             }}
             initial={{
-                opacity: 0
-            }}
-            exit={{
                 opacity: 0
             }}
             transition={{
