@@ -31,6 +31,25 @@ export default function Home() {
         duration: 0.2
       }}
     >
+      <Head>
+        <title>Muscari Server</title>
+        <meta name="description" content="Muscariさーばー." />
+        <meta property="og:title" content="Muscari Server" />
+        <meta property="og:description" content='ムスカリサーバーのウェブサイト' />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://eighty88.github.io/MuscariWeb/" />
+        <meta property="og:image" content='https://eighty88.github.io/MuscariWeb/images/thumbnails/thumbnail.png' />
+        <meta property="og:site_name" content="Muscari Server" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@taisa_ism" />
+        <meta name="twitter:url" content="https://eighty88.github.io/MuscariWeb/" />
+        <meta name="twitter:title" content="Muscari Server" />
+        <meta name="twitter:description" content='ムスカリサーバーのウェブサイト' />
+        <meta name="twitter:image" content='https://eighty88.github.io/MuscariWeb/images/thumbnails/thumbnail.png' />
+        <link rel="canonical" href="https://eighty88.github.io/MuscariWeb/" />
+        <link rel="shortcut icon" href='https://eighty88.github.io/MuscariWeb/images/icon/favicon/favicon.ico' />
+        <link rel="apple-touch-icon" href='https://eighty88.github.io/MuscariWeb/images/icon/apple/apple-icon.png' />
+      </Head>
       <HashRouter>
         <Sidebar></Sidebar>
         <div style={{
