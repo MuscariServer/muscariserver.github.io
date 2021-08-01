@@ -1,4 +1,23 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import moment from 'moment';
+import React from 'react';
+import Calendar from 'react-calendar'
+
+const month_item = {
+    20210718: { text: 'エンド開放\nドラゴンレイド' },
+}
+
+function getTileContent({ date, view }) {
+    if (view === 'month') {
+        const targetDate = moment(date).format('YYYYMMDD')
+
+        return month_item[targetDate] && month_item[targetDate].text ?
+            month_item[targetDate].text.split('\n').map((str, index) => (
+                <React.Fragment key={index}><br />{str}</React.Fragment>
+            ))
+            : null
+    }
+}
 
 function Events() {
     return (
@@ -23,10 +42,14 @@ function Events() {
                 fontSize: `2rem`,
             }}
         >
-            <h1>
-                イベント
-            </h1>
-            工事中...
+            <h2 style={{ margin: '0' }}>
+                イベント: 予定表
+            </h2>
+            <div style={{
+                textAlign: 'left',
+            }}>
+                <Calendar locale="ja-JP" value={new Date()} tileContent={getTileContent} />
+            </div>
         </motion.div>
     )
 }
