@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from 'next/image'
 
 function Money() {
     return (
@@ -16,10 +17,7 @@ function Money() {
             transition={{
                 duration: 0.2
             }}>
-            <img src="images/muscarium.png" style={{
-                textAlign: 'right',
-                float: 'right'
-            }}></img>
+            <Image src="images/muscarium.png" className="image-right" width='auto' height='auto' />
             <div style={{
                 textAlign: 'left',
                 verticalAlign: 'bottom',

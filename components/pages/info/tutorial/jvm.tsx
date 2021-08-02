@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from 'next/image'
 
 function JVM() {
     return (
@@ -16,7 +17,7 @@ function JVM() {
             transition={{
                 duration: 0.2
             }}>
-            <img src="images/GDL/GD5.png"></img>
+            <Image src="images/GDL/GD5.png" width='auto' height='auto'/>
             <div style={{
                 textAlign: 'left',
                 verticalAlign: 'bottom',

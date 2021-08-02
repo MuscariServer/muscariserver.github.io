@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from 'next/image'
 
 function Slot() {
     return (
@@ -24,13 +25,8 @@ function Slot() {
                 width: '1000px',
                 height: '600px',
             }}>
-                <div style={{
-
-                }}>
-                    <img src="images/hobby/slot.png" style={{
-                        textAlign: 'right',
-                        float: 'right'
-                    }}></img>
+                <div className="image-right">
+                    <Image src="images/hobby/slot.png" width='auto' height='auto'/>
                 </div>
                 <div style={{
                     textAlign: 'left',

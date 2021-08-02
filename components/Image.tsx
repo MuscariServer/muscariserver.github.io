@@ -1,8 +1,10 @@
-function ImageD(href:string, image:string) {
-    if(href !== "") {
-        return <a href={href}><img src={image} width="600px" height="auto"/></a>;
+import Image from 'next/image'
+
+function ImageD(href: string, image: string) {
+    if (href !== "") {
+        return <a href={href}><Image src={image} width="600px" height="auto" /></a>;
     } else {
-        return <img src={image} width="600px" height="auto"/>;
+        return <Image src={image} width="600px" height="auto" />;
     }
 }
 
