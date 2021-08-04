@@ -154,19 +154,17 @@ function Join() {
                     }
                 </div>
             </div>
-            {(pageID) => {
+            <div style={{
+                display: 'inline-block',
+                position: 'fixed',
+                top: '500px',
+                cursor: 'pointer',
+                fontSize: `3rem`,
+            }} onClick={() => {
                 if (pageID !== 14) {
-                    return <div style={{
-                        display: 'inline-block',
-                        position: 'fixed',
-                        top: '500px',
-                        cursor: 'pointer',
-                        fontSize: `3rem`,
-                    }} onClick={() => {
-                        history.push("/join/" + (pageID + 1));
-                    }} className="shadow">＞</div>
+                    history.push("/join/" + (pageID + 1));
                 }
-            }}
+            }} className="shadow">＞</div>
         </motion.div>
     )
 }
