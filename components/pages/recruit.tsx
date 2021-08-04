@@ -68,7 +68,7 @@ function Recruit() {
                 <h1>開発陣募集</h1>
                 <div>
                     <Item>
-                        <Image src={'./images/recruit/mod.png'} width="150" height="150" />
+                        <Image src={'/images/recruit/mod.png'} width={150} height={150} />
                         <ul style={{
                             fontSize: `15px`,
                             color: `#000`
@@ -77,7 +77,7 @@ function Recruit() {
                         </ul>
                     </Item>
                     <Item>
-                        <Image src={'./images/recruit/program.png'} width="150" height="150" />
+                        <Image src={'/images/recruit/program.png'} width={150} height={150} />
                         <ul style={{
                             fontSize: `15px`,
                             color: `#000`
@@ -91,7 +91,7 @@ function Recruit() {
                 </div>
                 <div>
                     <Item>
-                        <Image src={'./images/recruit/hassou.png'} width="150" height="150" />
+                        <Image src={'/images/recruit/hassou.png'} width={150} height={150} />
                         <ul style={{
                             fontSize: `15px`,
                             color: `#000`
@@ -100,7 +100,7 @@ function Recruit() {
                         </ul>
                     </Item>
                     <Item>
-                        <Image src={'./images/recruit/design.png'} width="150" height="150" />
+                        <Image src={'/images/recruit/design.png'} width={150} height={150} />
                         <ul style={{
                             fontSize: `15px`,
                             color: `#000`
@@ -114,7 +114,7 @@ function Recruit() {
                 </div>
                 <div>
                     <Item>
-                        <Image src={'./images/recruit/en.png'} width="150" height="150" />
+                        <Image src={'/images/recruit/en.png'} width={150} height={150} />
                         <ul style={{
                             fontSize: `15px`,
                             color: `#000`
@@ -123,7 +123,7 @@ function Recruit() {
                         </ul>
                     </Item>
                     <Item>
-                        <Image src={'./images/recruit/alpha.png'} width="150" height="150" />
+                        <Image src={'/images/recruit/alpha.png'} width={150} height={150} />
                         <ul style={{
                             fontSize: `15px`,
                             color: `#000`

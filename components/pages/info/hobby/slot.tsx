@@ -26,7 +26,7 @@ function Slot() {
                 height: '600px',
             }}>
                 <div className="image-right">
-                    <Image src="images/hobby/slot.png" width='auto' height='auto'/>
+                    <Image src="/images/hobby/slot.png" width={523} height={328}/>
                 </div>
                 <div style={{
                     textAlign: 'left',
