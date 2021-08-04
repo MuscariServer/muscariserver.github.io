@@ -17,7 +17,7 @@ function JVM() {
             transition={{
                 duration: 0.2
             }}>
-            <img alt="" src="/images/GDL/GD5.png" width={1000} height={600} />
+            <img alt="" src="images/GDL/GD5.png" width={1000} height={600} />
             <div style={{
                 textAlign: 'left',
                 verticalAlign: 'bottom',
