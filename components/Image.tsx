@@ -5,9 +5,9 @@ function ImageD(href: string, image: string) {
         return <></>
     }
     if (href !== "") {
-        return <a href={href}><Image src={image} width={1000} height={600}/></a>;
+        return <a href={href}><img alt="" src={image} width={1000} height={600} /></a>;
     } else {
-        return <Image src={image} width={1000} height={600}/>;
+        return <img alt="" src={image} width={1000} height={600} />;
     }
 }
 
