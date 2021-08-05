@@ -17,13 +17,15 @@ function JVM() {
             transition={{
                 duration: 0.2
             }}>
-            <img alt="" src="images/GDL/GD5.png" width={1000} height={600} />
+            <img src="images/GDL/GD5.png" width={1000} height={600} />
             <div style={{
                 textAlign: 'left',
                 verticalAlign: 'bottom',
                 bottom: '30px',
                 margin: '10px',
                 background: 'rgba(0, 0, 0, 0.5)',
+                padding: '10px',
+                borderRadius: '5px',
             }} className="shadow">
                 -client -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:SurvivorRatio=4 -XX:TargetSurvivorRatio=80 -XX:NewRatio=3 -Xss64M -XX:ParallelGCThreads=2 -XX:ConcGCThreads=2 <br />
                 -XX:ReservedCodeCacheSize=128M -XX:CompressedClassSpaceSize=128M -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=70 -XX:CICompilerCount=4 -XX:InlineSmallCode=8K -XX:MaxInlineSize=128 <br />
