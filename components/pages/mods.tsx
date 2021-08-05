@@ -1,6 +1,5 @@
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { motion } from "framer-motion";
-import 'react-tabs/style/react-tabs.css';
 import styled from 'styled-components';
 
 import { BiBuildingHouse } from 'react-icons/bi';

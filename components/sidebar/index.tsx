@@ -34,6 +34,7 @@ const NavIcon = styled.div<{ sidebar: boolean }>`
     margin-top: 0.5rem;
     visibility: ${({ sidebar }) => (sidebar ? 'hidden' : 'visible')};
     transition: transform 0.5s ease;
+    cursor: pointer;
 `
 
 const NavIconClose = styled.div<{ sidebar: boolean }>`
@@ -43,6 +44,7 @@ const NavIconClose = styled.div<{ sidebar: boolean }>`
     margin-top: 0.5rem;
     visibility: ${({ sidebar }) => (sidebar ? 'visible' : 'hidden')};
     transition: transform 0.5s ease;
+    cursor: pointer;
 `
 
 const SidebarWrap = styled.div``;
@@ -60,9 +62,18 @@ const MenuItem = styled(Link)`
     font-size: 2rem;
     position: relative;
     display: block;
-    overflow-x: auto;
     white-space: nowrap;
+    top: -10px;
+    left: -10px;
+    margin: 5px;
     height: 50px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    &:hover {
+        background: #999;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+    }
 `
 
 const Name = styled.span<{ sidebar: boolean, visible: boolean }>`

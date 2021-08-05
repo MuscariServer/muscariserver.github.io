@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
 import Dimensions from "./dimensions";
 import TurnGacha from "./gacha";
 import Intradable from "./intradable";
@@ -54,11 +53,11 @@ function Tutorial() {
                 <TabPanel><Shops /></TabPanel>
                 <TabPanel><Towny /></TabPanel>
                 <TabPanel><Vote /></TabPanel>
-                <TabPanel><SkillTrees/></TabPanel>
-                <TabPanel><Quests/></TabPanel>
-                <TabPanel><TurnGacha/></TabPanel>
-                <TabPanel><Support/></TabPanel>
-                <TabPanel><Dimensions/></TabPanel>
+                <TabPanel><SkillTrees /></TabPanel>
+                <TabPanel><Quests /></TabPanel>
+                <TabPanel><TurnGacha /></TabPanel>
+                <TabPanel><Support /></TabPanel>
+                <TabPanel><Dimensions /></TabPanel>
             </Tabs>
         </motion.div>
     )

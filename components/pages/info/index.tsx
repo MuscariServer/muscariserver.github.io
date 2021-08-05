@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
 
 import { AiOutlineFileText } from 'react-icons/ai'
 import { HiOutlineDocumentAdd } from 'react-icons/hi'

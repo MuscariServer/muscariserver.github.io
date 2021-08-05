@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
 import Architecture from "./architecture";
 import Capture from "./capture";
 import Casino from "./casino";
@@ -48,16 +47,16 @@ function Dimensions() {
                     <Tab>攻略</Tab>
                     <Tab>建築</Tab>
                 </TabList>
-                <TabPanel><Lobby/></TabPanel>
-                <TabPanel><Casino/></TabPanel>
-                <TabPanel><Nether/></TabPanel>
-                <TabPanel><End/></TabPanel>
-                <TabPanel><Forest/></TabPanel>
-                <TabPanel><Erebus/></TabPanel>
-                <TabPanel><Unknown/></TabPanel>
-                <TabPanel><Resources/></TabPanel>
-                <TabPanel><Capture/></TabPanel>
-                <TabPanel><Architecture/></TabPanel>
+                <TabPanel><Lobby /></TabPanel>
+                <TabPanel><Casino /></TabPanel>
+                <TabPanel><Nether /></TabPanel>
+                <TabPanel><End /></TabPanel>
+                <TabPanel><Forest /></TabPanel>
+                <TabPanel><Erebus /></TabPanel>
+                <TabPanel><Unknown /></TabPanel>
+                <TabPanel><Resources /></TabPanel>
+                <TabPanel><Capture /></TabPanel>
+                <TabPanel><Architecture /></TabPanel>
             </Tabs>
         </motion.div>
     )

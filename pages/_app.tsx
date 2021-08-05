@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import '../styles/globals.css'
 import '../styles/calendar.css'
+import '../styles/tabs.css'
 
 function MyApp({ Component, pageProps }) {
   return (

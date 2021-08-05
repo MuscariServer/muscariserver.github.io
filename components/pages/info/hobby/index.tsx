@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
 import Athle from "./athle";
 import BlackJack from "./blackjack";
 import Gacha from "./gacha";
