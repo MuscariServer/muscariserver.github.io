@@ -61,7 +61,7 @@ const SidebarMenuWrap = styled.li`
 const MenuItem = styled(Link)`
     font-size: 2rem;
     position: relative;
-    display: block;
+    display: inline-block;
     white-space: nowrap;
     top: -10px;
     left: -10px;
@@ -75,6 +75,31 @@ const MenuItem = styled(Link)`
         border-radius: 5px;
     }
 `
+
+const ToolTip = styled.div`
+    font-size: 1rem;
+    visibility: hidden;
+    position: relative;
+    opacity: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    left: 20px;
+    top: -17px;
+    width: 100px;
+    display: inline-block;
+    transition: all 0.3s ease;
+`
+
+const W = styled.div<{ sidebar: boolean }>`
+    display: block;
+    white-space: nowrap;
+    & ${MenuItem}:hover + ${ToolTip} {
+        visibility: ${({ sidebar }) => (sidebar ? 'hidden' : 'visible')};
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+`;
 
 const Name = styled.span<{ sidebar: boolean, visible: boolean }>`
     display: ${({ visible }) => (visible ? 'inline flow-root' : 'none')};
@@ -105,7 +130,7 @@ const Sidebar: FC = () => {
         setTimeout(() => {
             setSidebar(!sidebar)
         }, 10)
-        if(sidebarV) {
+        if (sidebarV) {
             setTimeout(() => {
                 setSidebarV(!sidebarV)
             }, 400)
@@ -119,44 +144,68 @@ const Sidebar: FC = () => {
             <SidebarNav sidebar={sidebar}>
                 <SidebarWrap>
                     <NavIcon onClick={showSidebar} sidebar={sidebar}>
-                        <HiOutlineMenu/>
+                        <HiOutlineMenu />
                     </NavIcon>
                     <NavIconClose onClick={showSidebar} sidebar={sidebar}>
                         <HiOutlineMenuAlt3 />
                     </NavIconClose>
                     <SidebarMenuWrap>
-                        <MenuItem to="/">
-                            <AiOutlineHome />
-                            <Name sidebar={sidebar} visible={sidebarV}>トップ</Name>
-                        </MenuItem>
-                        <MenuItem to="/mods">
-                            <GiAnvilImpact />
-                            <Name sidebar={sidebar} visible={sidebarV}>導入Mod</Name>
-                        </MenuItem>
-                        <MenuItem to="/join/1">
-                            <AiOutlineImport />
-                            <Name sidebar={sidebar} visible={sidebarV}>参加方法</Name>
-                        </MenuItem>
-                        <MenuItem to="/events">
-                            <BsCalendar />
-                            <Name sidebar={sidebar} visible={sidebarV}>イベント</Name>
-                        </MenuItem>
-                        <MenuItem to="/donate">
-                            <FaDonate />
-                            <Name sidebar={sidebar} visible={sidebarV}>寄付</Name>
-                        </MenuItem>
-                        <MenuItem to="/info">
-                            <AiOutlineInfoCircle />
-                            <Name sidebar={sidebar} visible={sidebarV}>情報</Name>
-                        </MenuItem>
-                        <MenuItem to="/recruit">
-                            <HiOutlineCode />
-                            <Name sidebar={sidebar} visible={sidebarV}>開発者募集</Name>
-                        </MenuItem>
-                        <MenuItem to="/links">
-                            <BiLinkExternal />
-                            <Name sidebar={sidebar} visible={sidebarV}>リンク集</Name>
-                        </MenuItem>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/">
+                                <AiOutlineHome />
+                                <Name sidebar={sidebar} visible={sidebarV}>トップ</Name>
+                            </MenuItem>
+                            <ToolTip>トップ</ToolTip>
+                        </W>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/mods">
+                                <GiAnvilImpact />
+                                <Name sidebar={sidebar} visible={sidebarV}>導入Mod</Name>
+                            </MenuItem>
+                            <ToolTip>導入Mod</ToolTip>
+                        </W>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/join/1">
+                                <AiOutlineImport />
+                                <Name sidebar={sidebar} visible={sidebarV}>参加方法</Name>
+                            </MenuItem>
+                            <ToolTip>参加方法</ToolTip>
+                        </W>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/events">
+                                <BsCalendar />
+                                <Name sidebar={sidebar} visible={sidebarV}>イベント</Name>
+                            </MenuItem>
+                            <ToolTip>イベント</ToolTip>
+                        </W>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/donate">
+                                <FaDonate />
+                                <Name sidebar={sidebar} visible={sidebarV}>寄付</Name>
+                            </MenuItem>
+                            <ToolTip>寄付</ToolTip>
+                        </W>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/info">
+                                <AiOutlineInfoCircle />
+                                <Name sidebar={sidebar} visible={sidebarV}>情報</Name>
+                            </MenuItem>
+                            <ToolTip>情報</ToolTip>
+                        </W>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/recruit">
+                                <HiOutlineCode />
+                                <Name sidebar={sidebar} visible={sidebarV}>開発者募集</Name>
+                            </MenuItem>
+                            <ToolTip>開発者募集</ToolTip>
+                        </W>
+                        <W sidebar={sidebar}>
+                            <MenuItem to="/links">
+                                <BiLinkExternal />
+                                <Name sidebar={sidebar} visible={sidebarV}>リンク集</Name>
+                            </MenuItem>
+                            <ToolTip>リンク集</ToolTip>
+                        </W>
                         <Discord sidebar={sidebar} visible={sidebarV} className="discord" src="https://discord.com/widget?id=419146900441137173&theme=dark" width="350" height="420" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></Discord>
                     </SidebarMenuWrap>
                 </SidebarWrap>

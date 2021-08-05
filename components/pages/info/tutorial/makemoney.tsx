@@ -17,7 +17,9 @@ function Money() {
             transition={{
                 duration: 0.2
             }}>
-            <img src="images/muscarium.png" className="image-right" />
+            <img src="images/muscarium.png" className="image-right" style={{
+                float: 'right',
+            }}/>
             <div style={{
                 textAlign: 'left',
                 verticalAlign: 'bottom',
