@@ -89,6 +89,7 @@ const ToolTip = styled.div`
     width: 100px;
     display: inline-block;
     transition: all 0.3s ease;
+    text-align: center;
 `
 
 const W = styled.div<{ sidebar: boolean }>`

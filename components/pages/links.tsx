@@ -11,11 +11,11 @@ const Items = styled.div`
     border-radius: 10px;
     height: 250px;
     width: 250px;
+    display: inline-block;
 `
 
 const DIV = styled.div`
-    display: flex;
-    justify-content: space-between;
+    display: block;
 `
 
 function Links() {
