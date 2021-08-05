@@ -67,9 +67,8 @@ function Donate() {
                 </ul>
                 <br />
                 <a href="https://www.amazon.co.jp/registry/wishlist/2K8VZWQTFZSYU/ref=cm_sw_r_cp_ep_ws_rZzrCbT42HZXH" style={{
-                    color: 'cyan',
+                    color: 'blue',
                     fontSize: '1.5em',
-
                 }}>大佐の欲しい物リスト</a>
                 <div onClick={setListVisible} style={{
                     fontSize: '1.5em',

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Image from 'next/image'
 
 const DIV = styled.div`
-    width: 100vh;
+    width: 1500px;
     overflow-y: auto;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
@@ -88,8 +88,6 @@ function Recruit() {
                             </li>
                         </ul>
                     </Item>
-                </div>
-                <div>
                     <Item>
                         <img src={'images/recruit/hassou.png'} width={150} height={150} />
                         <ul style={{
@@ -99,6 +97,8 @@ function Recruit() {
                             <li>イベントや新しいシステムの発案など、<br />柔軟な発想ができる方をお待ちしております。</li>
                         </ul>
                     </Item>
+                </div>
+                <div>
                     <Item>
                         <img src={'images/recruit/design.png'} width={150} height={150} />
                         <ul style={{
@@ -111,8 +111,6 @@ function Recruit() {
                             </li>
                         </ul>
                     </Item>
-                </div>
-                <div>
                     <Item>
                         <img src={'images/recruit/en.png'} width={150} height={150} />
                         <ul style={{
