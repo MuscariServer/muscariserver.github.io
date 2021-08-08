@@ -3428,6 +3428,11 @@ react-motion@^0.5.2:
     prop-types "^15.5.8"
     raf "^3.1.0"
 
+react-ogp@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/react-ogp/-/react-ogp-0.0.3.tgz#f3d49ff49e593576778f6a11824a4ccb2d8b427d"
+  integrity sha512-+m5my7G6dxzN79e1e/M5VV2MmM2sXrTqs+hfL8sFHsjWn4PMv3P8eD/aMSHPibvp6BYsiFCeWMMSzcqUCIQr9w==
+
 react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
