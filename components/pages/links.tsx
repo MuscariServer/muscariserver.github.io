@@ -30,7 +30,6 @@ function Links() {
             transition={{
                 duration: 0.2
             }}
-
             style={{
                 textAlign: 'center',
             }}

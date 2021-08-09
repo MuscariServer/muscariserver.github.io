@@ -103,7 +103,6 @@ function Join() {
             transition={{
                 duration: 0.2
             }}
-
             style={{
                 textAlign: 'center',
                 color: `#fff`,

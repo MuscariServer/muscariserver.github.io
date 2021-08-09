@@ -34,7 +34,6 @@ function Donate() {
             transition={{
                 duration: 0.2
             }}
-
             style={{
                 textAlign: 'center',
             }}

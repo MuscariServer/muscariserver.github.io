@@ -17,7 +17,6 @@ function Hobby() {
             transition={{
                 duration: 0.2
             }}
-
             style={{
                 textAlign: 'center',
                 display: 'inline-block',

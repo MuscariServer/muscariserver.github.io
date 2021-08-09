@@ -24,7 +24,6 @@ function Tutorial() {
             transition={{
                 duration: 0.2
             }}
-
             style={{
                 textAlign: 'center',
                 top: '10px',
