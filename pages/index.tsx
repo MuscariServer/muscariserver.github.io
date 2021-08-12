@@ -42,6 +42,7 @@ export default function Home() {
           backgroundSize: `cover`,
           width: '100%',
           left: '40px',
+          display: 'flex',
         }} className={styles.container}>
           <Switch>
             <Route path="/" exact component={TopPage} />
