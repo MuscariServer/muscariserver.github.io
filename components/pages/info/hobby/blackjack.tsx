@@ -16,9 +16,7 @@ function BlackJack() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <div style={{
                 backgroundImage: `url(images/hobby/bj.png)`,
                 display: 'inline-block',

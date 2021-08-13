@@ -15,9 +15,7 @@ function Rules() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <h1>ルール</h1>
             <div style={{
                 textAlign: 'left',

@@ -17,9 +17,7 @@ function Vote() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <div style={{
                 textAlign: 'left',
                 bottom: '30px',

@@ -35,9 +35,7 @@ function SkillTree() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <SkillTier id="3">
                 <Skill>
                     <h2>exorcist</h2>

@@ -16,9 +16,7 @@ function Nether() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <div style={{
                 backgroundImage: `url(images/dimension/nether.png)`,
                 display: 'inline-block',

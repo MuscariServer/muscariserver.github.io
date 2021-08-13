@@ -16,9 +16,7 @@ function Unknown() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <div style={{
                 backgroundImage: `url(images/dimension/emptiness.png)`,
                 display: 'inline-block',

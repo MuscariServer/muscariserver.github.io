@@ -76,9 +76,7 @@ function Logs() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <Calendar locale="ja-JP" value={new Date()} tileContent={getTileContent} />
         </motion.div>
     )

@@ -16,9 +16,7 @@ function Forest() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <div style={{
                 backgroundImage: `url(images/dimension/twilight.png)`,
                 display: 'inline-block',

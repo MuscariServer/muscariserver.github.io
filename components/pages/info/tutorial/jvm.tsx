@@ -17,9 +17,7 @@ function JVM() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <img src="images/GDL/GD5.png" width={1000} height={600} />
             <div style={{
                 textAlign: 'left',

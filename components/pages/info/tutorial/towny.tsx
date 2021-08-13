@@ -16,9 +16,7 @@ function Towny() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <a href="https://github.com/TownyAdvanced/Towny/wiki"><h1>Towny Wiki</h1></a>
         </motion.div>
     );

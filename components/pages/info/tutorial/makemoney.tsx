@@ -17,9 +17,7 @@ function Money() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <img src="images/muscarium.png" className="image-right" style={{
                 float: 'right',
             }} />

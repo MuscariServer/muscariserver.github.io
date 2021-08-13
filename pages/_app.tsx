@@ -14,9 +14,6 @@ function MyApp({ Component, pageProps }) {
         initial={{
           opacity: 0
         }}
-        exit={{
-          opacity: 0
-        }}
         transition={{
           duration: 0.2
         }}

@@ -16,9 +16,7 @@ function Lobby() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <div style={{
                 backgroundImage: `url(images/dimension/lobby.png)`,
                 display: 'inline-block',

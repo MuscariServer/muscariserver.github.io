@@ -16,9 +16,7 @@ function Shops() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <div style={{
                 textAlign: 'center',
                 verticalAlign: 'bottom',

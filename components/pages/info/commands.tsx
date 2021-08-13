@@ -67,9 +67,7 @@ function Commands() {
             transition={{
                 duration: 0.2
             }}
-            exit={{
-                opacity: 0
-            }}>
+        >
             <h1>コマンド一覧</h1>
             <div style={{
                 overflowY: 'auto',
