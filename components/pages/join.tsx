@@ -8,28 +8,18 @@ import {
     useHistory
 } from "react-router-dom";
 
-import { motion } from "framer-motion";
-import styled from 'styled-components';
-import ImageD from "../Image";
+import { AnimatePresence, motion } from "framer-motion";
 
 
 function Join() {
     const history = useHistory();
     const { page } = useParams();
     const pageID = parseInt(page);
-    const width = window.innerWidth - 500;
+    const width = window.innerWidth - 750;
 
     let image = "";
     let message = "";
     let href = "";
-
-    if (page === "0") {
-        history.push("/join/1");
-    }
-
-    if (page === "15") {
-        history.push("/join/14");
-    }
 
     switch (pageID) {
         case 1:
@@ -93,81 +83,77 @@ function Join() {
 
     }
     return (
-        <motion.div
-            animate={{
-                opacity: 1
-            }}
-            initial={{
-                opacity: 0
-            }}
-            transition={{
-                duration: 0.2
-            }}
-            exit={{
-                opacity: 0
-            }}
-            style={{
-                textAlign: 'center',
-                color: `#fff`,
-                fontSize: `1rem`,
-            }}
-        >
+        <>
             <h1 style={{
-                fontSize: `3rem`
+                fontSize: `3rem`,
+                display: 'block',
+                color: '#fff',
             }}>
                 参加方法
             </h1>
-
-            <div style={{
-                display: 'inline-block',
-                position: 'fixed',
-                top: '500px',
-                cursor: 'pointer',
-                fontSize: `3rem`,
-            }} onClick={() => {
-                if (pageID !== 1) {
-                    history.push("/join/" + (pageID - 1));
-                }
-            }} className="shadow">＜</div>
-            <div id="canvas" style={{
-                display: 'inline-block',
-                position: 'relative',
-                width: width + 'px',
-                margin: '50px',
-                height: '750px',
-                transition: 'all 0.2s ease-in-out',
-                opacity: 1,
-            }}>
-                <div id="thumbnail">
-                    {ImageD(href, image)}
-                </div>
-                <div id="description" style={{
-                    background: 'rgba(0, 0, 0, 0.5)',
-                    padding: '10px',
-                    width: '500px',
-                    textAlign: 'center',
-                    display: 'inline-block',
-                    borderRadius: '20px',
+            <AnimatePresence>
+                <div style={{
+                    display: 'block',
+                    color: '#fff',
                 }}>
-                    {
-                        message.split('\n').map((str, index) => (
-                            <React.Fragment key={index}>{str}<br /></React.Fragment>
-                        ))
-                    }
+                    <div style={{
+                        display: 'inline-block',
+                        cursor: 'pointer',
+                        fontSize: `3rem`,
+                        position: 'fixed',
+                        top: '50%',
+                        transform: 'scale(-1, 1)',
+                    }} onClick={() => {
+                        if (pageID !== 1) {
+                            history.push("/join/" + (pageID - 1));
+                        }
+                    }} className="shadow">{"‣"}</div>
+                    <div style={{
+                        display: 'inline-block',
+                    }}>
+                        <motion.img
+                            key={pageID}
+                            src={image}
+                            initial="enter"
+                            animate="center"
+                            exit="exit"
+                            width="750px"
+                            transition={{
+                                x: { type: "spring", stiffness: 300, damping: 30 },
+                                opacity: { duration: 0.2 }
+                            }}
+                            style={{
+                                padding: '30px',
+                            }}
+                        />
+                        <div id="description" style={{
+                            background: 'rgba(0, 0, 0, 0.5)',
+                            padding: '10px',
+                            width: '750px',
+                            textAlign: 'center',
+                            borderRadius: '20px',
+                        }}>
+                            {
+                                message.split('\n').map((str, index) => (
+                                    <React.Fragment key={index}>{str}<br /></React.Fragment>
+                                ))
+                            }
+                        </div>
+                    </div>
+                    <div style={{
+                        display: 'inline-block',
+                        position: 'fixed',
+                        cursor: 'pointer',
+                        fontSize: `3rem`,
+                        top: '50%',
+                    }} onClick={() => {
+                        if (pageID !== 14) {
+                            history.push("/join/" + (pageID + 1));
+                        }
+                    }} className="shadow">‣</div>
                 </div>
-            </div>
-            <div style={{
-                display: 'inline-block',
-                position: 'fixed',
-                top: '500px',
-                cursor: 'pointer',
-                fontSize: `3rem`,
-            }} onClick={() => {
-                if (pageID !== 14) {
-                    history.push("/join/" + (pageID + 1));
-                }
-            }} className="shadow">＞</div>
-        </motion.div>
+            </AnimatePresence>
+        </>
     )
 }
 
