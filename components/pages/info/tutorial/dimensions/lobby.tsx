@@ -15,6 +15,9 @@ function Lobby() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/lobby.png)`,
@@ -38,7 +41,7 @@ function Lobby() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>ロビー</h1>
-                    サーバーに参加して一番初めに立ち入る場所。<br/>
+                    サーバーに参加して一番初めに立ち入る場所。<br />
                     様々な世界とのゲートを繋いでいます。
                 </div>
             </div>

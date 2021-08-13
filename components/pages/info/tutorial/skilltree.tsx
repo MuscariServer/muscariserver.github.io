@@ -34,6 +34,9 @@ function SkillTree() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <SkillTier id="3">
                 <Skill>
@@ -65,7 +68,7 @@ function SkillTree() {
                     BloodMagic<br />
                     HaC Foods
                 </Skill>
-                <SPACE/>
+                <SPACE />
                 <Skill>
                     <h2>wizard2</h2>
                     ThaumCraft
@@ -74,7 +77,7 @@ function SkillTree() {
             <SkillTier id="1">
                 <Skill>
                     <h2>wizard1</h2>
-                    Botania<br/>
+                    Botania<br />
                     Pam's Harvestcraft
                 </Skill>
             </SkillTier>
@@ -87,8 +90,8 @@ function SkillTree() {
             <SkillTier id="1">
                 <Skill>
                     <h2>engeneer1</h2>
-                    Immersive Engeneering<br/>
-                    Thermal Expansion<br/>
+                    Immersive Engeneering<br />
+                    Thermal Expansion<br />
                     TiC Smeltery
                 </Skill>
             </SkillTier>
@@ -98,7 +101,7 @@ function SkillTree() {
                     IndustrialCraft2<br />
                     MrCrayfish's Vehicle
                 </Skill>
-                <SPACE/>
+                <SPACE />
                 <Skill>
                     <h2>forecaster</h2>
                     Heat and Climate

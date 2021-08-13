@@ -34,6 +34,9 @@ function Mods() {
             transition={{
                 duration: 0.2
             }}
+            exit={{
+                opacity: 0
+            }}
             style={{
                 textAlign: 'center',
                 color: `#fff`,

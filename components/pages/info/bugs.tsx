@@ -44,6 +44,9 @@ function Bugs() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <Table
                 columns={columns}

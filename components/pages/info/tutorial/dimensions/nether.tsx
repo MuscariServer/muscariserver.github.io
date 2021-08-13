@@ -15,6 +15,9 @@ function Nether() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/nether.png)`,
@@ -38,7 +41,7 @@ function Nether() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>ネザー</h1>
-                    HeatandClimateの気候システムにより<br/>
+                    HeatandClimateの気候システムにより<br />
                     一部地域でダメージを受けるので注意してください。
                 </div>
             </div>

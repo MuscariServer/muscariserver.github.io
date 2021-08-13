@@ -15,6 +15,9 @@ function Capture() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/capture.png)`,
@@ -39,7 +42,7 @@ function Capture() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>攻略</h1>
-                    攻略重視のワールド。<br/>
+                    攻略重視のワールド。<br />
                     建築に自信がない人やmodでたくさん遊びたい人向け。
                 </div>
             </div>

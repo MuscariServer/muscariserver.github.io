@@ -15,6 +15,9 @@ function End() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/end.png)`,
@@ -38,7 +41,7 @@ function End() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>エンド</h1>
-                    HeatandClimateの気候システムにより<br/>
+                    HeatandClimateの気候システムにより<br />
                     全域でダメージを受けるので注意してください。
                 </div>
             </div>

@@ -15,6 +15,9 @@ function Erebus() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/erebus.png)`,
@@ -38,7 +41,7 @@ function Erebus() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>Erebus</h1>
-                    人のいない自然にあふれた大洞窟に虫が暮らしている世界。<br/>
+                    人のいない自然にあふれた大洞窟に虫が暮らしている世界。<br />
                     ヤツらは人の匂いを嗅ぎつけて襲ってくる。
                 </div>
             </div>

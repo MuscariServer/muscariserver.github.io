@@ -15,6 +15,9 @@ function Casino() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/casino.png)`,
@@ -38,7 +41,7 @@ function Casino() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>カジノ</h1>
-                    カジノのゲームができるワールドです。<br/>
+                    カジノのゲームができるワールドです。<br />
                     お金を賭けることができます。
                 </div>
             </div>

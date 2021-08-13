@@ -16,17 +16,7 @@ import Info from '../components/pages/info'
 export default function Home() {
   var id = Math.floor(Math.random() * 23);
   return (
-    <motion.div
-      animate={{
-        opacity: 1
-      }}
-      initial={{
-        opacity: 0
-      }}
-      transition={{
-        duration: 0.2
-      }}
-    >
+    <div>
       <Head>
         <title>Muscari Server</title>
         <meta name="description" content="Muscariさーばー." />
@@ -56,6 +46,6 @@ export default function Home() {
           </Switch>
         </div>
       </HashRouter>
-    </motion.div>
+      </div>
   )
 }

@@ -15,6 +15,9 @@ function Unknown() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/emptiness.png)`,
@@ -38,9 +41,9 @@ function Unknown() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>??????</h1>
-                    縺昴ｉ繧偵∩縺ゅ￡繧九→<br/>
-                    縺ｪ縺ｫ繧ゅ↑縺<br/>
-                    縺ｪ縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺<br/>
+                    縺昴ｉ繧偵∩縺ゅ￡繧九→<br />
+                    縺ｪ縺ｫ繧ゅ↑縺<br />
+                    縺ｪ縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺?↑縺ｫ繧ゅ↑縺<br />
                     縺励ｍ縺ｫ縺?縺代?縺｡縺九▼縺上↑
                 </div>
             </div>

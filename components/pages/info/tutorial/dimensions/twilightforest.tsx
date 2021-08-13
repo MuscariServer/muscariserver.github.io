@@ -15,6 +15,9 @@ function Forest() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <div style={{
                 backgroundImage: `url(images/dimension/twilight.png)`,
@@ -38,7 +41,7 @@ function Forest() {
                     margin: '10px',
                 }} className="shadow">
                     <h1>黄昏の森</h1>
-                    日の出が訪れないモンスターの魔窟と化した不思議なディメンション。<br/>
+                    日の出が訪れないモンスターの魔窟と化した不思議なディメンション。<br />
                     モンスター達は建物を築いてプレイヤーの挑戦を待っている...
                 </div>
             </div>

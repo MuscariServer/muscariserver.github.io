@@ -15,6 +15,9 @@ function FAQ() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <h1>よくある質問</h1>
             当サーバーのFAQは2回以上お問合わせフォームで寄せられた質問のみ掲載します。<br />

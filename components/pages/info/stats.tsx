@@ -17,6 +17,9 @@ function Stats() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <h1>ムスカリ統計局</h1>
             <div style={{

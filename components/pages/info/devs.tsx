@@ -31,6 +31,9 @@ function Devs() {
             }}
             transition={{
                 duration: 0.2
+            }}
+            exit={{
+                opacity: 0
             }}>
             <h1>開発陣一覧</h1>
             <table style={{
