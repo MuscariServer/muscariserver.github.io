@@ -15,6 +15,7 @@ const A = styled.a`
     border-radius: 0.5rem;
     margin-top: 0.5rem;
     transition: all .3s;
+    background-color: rgba(255, 255, 255, 0.4);
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.4);
