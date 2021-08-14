@@ -12,6 +12,8 @@ const Items = styled.div`
     height: 250px;
     width: 250px;
     display: inline-block;
+    background-color: rgba(111, 111, 111, 0.5);
+    padding: 5px;
 `
 
 const DIV = styled.div`

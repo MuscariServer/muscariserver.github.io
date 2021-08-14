@@ -24,7 +24,7 @@ function Join() {
     switch (pageID) {
         case 1:
             image = "images/discord/discord.png";
-            message = "当サーバーでは遊ぶためにDiscord連携が必要となっております。\n通話の強要は一切ありませんのでご安心下さい。\nまた、これ以降でわからないことがあったらDiscordまたはお問い合わせフォームで質問して下さい。"
+            message = "当サーバーでは遊ぶためにDiscord連携が必要となっております。\n通話の強要は一切ありませんのでご安心下さい。\nまた、これ以降でわからないことがあったらDiscordまたはお問い合わせフォームで質問して下さい。\n上の画像をクリックでDiscordに参加できます。"
             href = "https://discord.gg/mTbgeP8";
             break;
         case 2:
@@ -97,6 +97,7 @@ function Join() {
                 fontSize: `3rem`,
                 display: 'block',
                 color: '#fff',
+                textAlign: 'center',
             }}>
                 参加方法
             </h1>
@@ -125,12 +126,7 @@ function Join() {
                             src={image}
                             initial="enter"
                             animate="center"
-                            exit="exit"
                             width="750px"
-                            transition={{
-                                x: { type: "spring", stiffness: 300, damping: 30 },
-                                opacity: { duration: 0.2 }
-                            }}
                             style={{
                                 padding: '30px',
                             }}
