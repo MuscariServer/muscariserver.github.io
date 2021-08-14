@@ -10,6 +10,38 @@ import {
 
 import { AnimatePresence, motion } from "framer-motion";
 
+function Image(pageID: number, image: string, href: string) {
+    if (href !== "") {
+        return (
+            <a href={href} style={{}}>
+                <motion.img
+                    key={pageID}
+                    src={image}
+                    initial="enter"
+                    animate="center"
+                    width="750px"
+                    style={{
+                        padding: '30px',
+                    }}
+                />
+            </a>
+        )
+    } else {
+        return (
+            <motion.img
+                key={pageID}
+                src={image}
+                initial="enter"
+                animate="center"
+                width="750px"
+                style={{
+                    padding: '30px',
+                }}
+            />
+        )
+    }
+}
+
 
 function Join() {
     const history = useHistory();
@@ -121,34 +153,9 @@ function Join() {
                     <div style={{
                         display: 'inline-block',
                     }}>
-                        {() => {
-                            if (href !== "") {
-                                <a href={href} style={{}}>
-                                    <motion.img
-                                        key={pageID}
-                                        src={image}
-                                        initial="enter"
-                                        animate="center"
-                                        width="750px"
-                                        style={{
-                                            padding: '30px',
-                                        }}
-                                    />
-                                </a>
-                            } else {
-                                <motion.img
-                                    key={pageID}
-                                    src={image}
-                                    initial="enter"
-                                    animate="center"
-                                    width="750px"
-                                    style={{
-                                        padding: '30px',
-                                    }}
-                                />
-                            }
-                        }}
-
+                        {
+                            Image(pageID, image, href)
+                        }
                         <div id="description" style={{
                             background: 'rgba(0, 0, 0, 0.5)',
                             padding: '10px',
