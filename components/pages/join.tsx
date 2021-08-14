@@ -123,7 +123,7 @@ function Join() {
                     }}>
                         {() => {
                             if (href !== "") {
-                                <a href={href} target="_blank" style={{}}>
+                                <a href={href} style={{}}>
                                     <motion.img
                                         key={pageID}
                                         src={image}
