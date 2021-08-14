@@ -84,15 +84,15 @@ function Join() {
     }
     return (
         <motion.div
-        animate={{
-            opacity: 1
-        }}
-        initial={{
-            opacity: 0
-        }}
-        transition={{
-            duration: 0.2
-        }}>
+            animate={{
+                opacity: 1
+            }}
+            initial={{
+                opacity: 0
+            }}
+            transition={{
+                duration: 0.2
+            }}>
             <h1 style={{
                 fontSize: `3rem`,
                 display: 'block',
@@ -121,16 +121,34 @@ function Join() {
                     <div style={{
                         display: 'inline-block',
                     }}>
-                        <motion.img
-                            key={pageID}
-                            src={image}
-                            initial="enter"
-                            animate="center"
-                            width="750px"
-                            style={{
-                                padding: '30px',
-                            }}
-                        />
+                        {() => {
+                            if (href !== "") {
+                                <a href={href} target="_blank" style={{}}>
+                                    <motion.img
+                                        key={pageID}
+                                        src={image}
+                                        initial="enter"
+                                        animate="center"
+                                        width="750px"
+                                        style={{
+                                            padding: '30px',
+                                        }}
+                                    />
+                                </a>
+                            } else {
+                                <motion.img
+                                    key={pageID}
+                                    src={image}
+                                    initial="enter"
+                                    animate="center"
+                                    width="750px"
+                                    style={{
+                                        padding: '30px',
+                                    }}
+                                />
+                            }
+                        }}
+
                         <div id="description" style={{
                             background: 'rgba(0, 0, 0, 0.5)',
                             padding: '10px',
