@@ -83,7 +83,16 @@ function Join() {
 
     }
     return (
-        <>
+        <motion.div
+        animate={{
+            opacity: 1
+        }}
+        initial={{
+            opacity: 0
+        }}
+        transition={{
+            duration: 0.2
+        }}>
             <h1 style={{
                 fontSize: `3rem`,
                 display: 'block',
@@ -153,7 +162,7 @@ function Join() {
                     }} className="shadow">‣</div>
                 </div>
             </AnimatePresence>
-        </>
+        </motion.div>
     )
 }
 
