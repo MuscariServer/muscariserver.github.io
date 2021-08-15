@@ -9,6 +9,7 @@ const DIV = styled.div`
     height: 100vh;
     background-color: rgba(255,255,255,0.5);
     position: center;
+    display: inline-block;
 `
 
 const TableWrapper = styled.div<{ visible: boolean }>`
@@ -44,8 +45,8 @@ function Donate() {
                 <li style={{
                     listStyle: 'none',
                 }}>
-                    Muscari Serverは月額のレンタルサーバーではなく初期費用が必要な自宅サーバーを利用しています。<br />
-                    しかし電気代やパーツ交換など多少の費用がかかるため寄付を募集しています。
+                    Muscari Serverは月額のレンタルサーバーではなく<br />初期費用が必要な自宅サーバーを利用しています。<br />
+                    しかし電気代やパーツ交換など<br />多少の費用がかかるため寄付を募集しています。
                 </li>
                 <ul>
                     <h3>寄付によってできること</h3>
@@ -61,7 +62,7 @@ function Donate() {
                 </ul>
                 <ul>
                     <h2>寄付の方法</h2>
-                    <li>オーナー(大佐(rkcyk706))にDiscordのDMでAmazonギフト券のコードを伝える。<br />※個人宛かサーバー宛か伝えて下さい。</li>
+                    <li>オーナー(大佐(rkcyk706))にDiscordのDMで<br />Amazonギフト券のコードを伝える。<br />※個人宛かサーバー宛か伝えて下さい。</li>
                     <li>大佐のAmazon欲しい物リストを買う。</li>
                     <li>寄付内容については全内容をWikiにて公開します。</li>
                 </ul>
@@ -70,6 +71,8 @@ function Donate() {
                     color: 'blue',
                     fontSize: '1.5em',
                 }}>大佐の欲しい物リスト</a>
+            </DIV>
+            <DIV>
                 <div onClick={setListVisible} style={{
                     fontSize: '1.5em',
                     cursor: 'pointer',
