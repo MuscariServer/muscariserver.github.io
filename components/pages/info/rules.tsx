@@ -50,9 +50,6 @@ function Rules() {
                     <li>MuscariServerModpack及び推奨されているもの以外のMODの導入※2</li>
                     <li>複数アカウントの使用</li>
                     <br />
-                    ※1 Orb of Skillsの取引、複数アカウントの使用による擬似的な複数スキル獲得　など<br />
-                    ※1 不正なスキルの獲得はコマンドで確認が可能です。<br />
-                    ※2 Discordで運営にかけあうことで許可が降りる場合もあります<br />
                 </ul>
             </div>
             <div style={{
@@ -70,6 +67,25 @@ function Rules() {
                     <li>経済関連の禁止事項を行った場合、所持金の1/2を没収させて頂きます。</li>
                     <li>経済関連以外の禁止事項を行った場合、運営陣の裁量により処罰の内容が決定されます。</li>
                 </ul>
+            </div>
+            <div style={{
+                textAlign: 'left',
+                display: 'block',
+                verticalAlign: 'top',
+            }}>
+                <div style={{
+                    display: 'inline-block',
+                }}>
+                    ※1 Orb of Skillsの取引、複数アカウントの使用による擬似的な複数スキル獲得　など<br />
+                    ※1 不正なスキルの獲得はコマンドで確認が可能です。<br />
+                    ※1 スキルが共有されてしまうため、FTBチームを組むことは禁止されています<br />
+                </div>
+                <div style={{
+                    display: 'inline-block',
+                    marginLeft: '5px',
+                }}>
+                    ※2 Discordで運営にかけあうことで許可が降りる場合もあります<br />
+                </div>
             </div>
         </motion.div>
     );

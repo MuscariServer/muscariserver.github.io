@@ -3,16 +3,6 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import Donates from './donates';
 
-const DIV = styled.div`
-    background-color: rgba(255, 255, 255, 0.5);
-    display: inline-block;
-`
-
-const TableWrapper = styled.div<{ visible: boolean }>`
-    opacity: ${({ visible }) => (visible ? 1 : 0)};
-    transition: 0.2s;
-`
-
 function Donate() {
     const [list, setList] = useState(false);
 
@@ -82,10 +72,8 @@ function Donate() {
                     <div onClick={setListVisible} style={{
                         fontSize: '1.5em',
                         cursor: 'pointer',
-                    }}>寄付者のリスト(クリックで表示)</div>
-                    <TableWrapper visible={list} align="center">
-                        <Donates />
-                    </TableWrapper>
+                    }}>寄付者のリスト</div>
+                    <Donates />
             </div>
         </motion.div>
     )
