@@ -4,12 +4,6 @@ import styled from 'styled-components';
 import Donates from './donates';
 
 function Donate() {
-    const [list, setList] = useState(false);
-
-    const setListVisible = () => {
-        setList(!list);
-    }
-
     return (
         <motion.div
             animate={{
@@ -69,10 +63,7 @@ function Donate() {
                 height: '75vh',
                 width: '75vh',
             }}>
-                    <div onClick={setListVisible} style={{
-                        fontSize: '1.5em',
-                        cursor: 'pointer',
-                    }}>寄付者のリスト</div>
+                    <h2>寄付者のリスト</h2>
                     <Donates />
             </div>
         </motion.div>
