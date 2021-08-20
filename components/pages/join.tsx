@@ -9,6 +9,29 @@ import {
 } from "react-router-dom";
 
 import { AnimatePresence, motion } from "framer-motion";
+import styled from "styled-components";
+
+const DIV = styled.div`
+    display: inline-block;
+    position: fixed;
+    cursor: pointer;
+    font-size: 3rem;
+    top: 50%;
+    width: 80px;
+    text-align: center;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.5);
+        color: #000;
+    }
+
+    &:active {
+        background: #fff;
+    }
+`
 
 function Join() {
     const history = useHistory();
@@ -91,9 +114,6 @@ function Join() {
                     initial="enter"
                     animate="center"
                     width="750px"
-                    style={{
-                        padding: '30px',
-                    }}
                 />
             </a>
         );
@@ -105,9 +125,6 @@ function Join() {
                 initial="enter"
                 animate="center"
                 width="750px"
-                style={{
-                    padding: '30px',
-                }}
             />
         );
     }
@@ -135,27 +152,23 @@ function Join() {
                     display: 'block',
                     color: '#fff',
                 }}>
-                    <div style={{
-                        display: 'inline-block',
-                        cursor: 'pointer',
-                        fontSize: `3rem`,
-                        position: 'fixed',
-                        top: '50%',
+                    <DIV style={{
                         transform: 'scale(-1, 1)',
+                        left: '25%',
                     }} onClick={() => {
                         if (pageID !== 1) {
                             history.push("/join/" + (pageID - 1));
                         }
-                    }} className="shadow">{"‣"}</div>
+                    }} className="shadow">‣</DIV>
                     <div style={{
                         display: 'inline-block',
+                        margin: '10px'
                     }}>
                         {
                             imageTag
                         }
                         <div id="description" style={{
                             background: 'rgba(0, 0, 0, 0.5)',
-                            padding: '10px',
                             width: '750px',
                             textAlign: 'center',
                             borderRadius: '20px',
@@ -167,17 +180,13 @@ function Join() {
                             }
                         </div>
                     </div>
-                    <div style={{
-                        display: 'inline-block',
-                        position: 'fixed',
-                        cursor: 'pointer',
-                        fontSize: `3rem`,
-                        top: '50%',
+                    <DIV style={{
+                        right: '25%',
                     }} onClick={() => {
                         if (pageID !== 14) {
                             history.push("/join/" + (pageID + 1));
                         }
-                    }} className="shadow">‣</div>
+                    }} className="shadow">‣</DIV>
                 </div>
             </AnimatePresence>
         </motion.div>
