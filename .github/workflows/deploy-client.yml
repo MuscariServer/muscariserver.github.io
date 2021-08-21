@@ -33,6 +33,8 @@ jobs:
           yarn build
         env:
           GITHUB_PAGES: true
+      - name: copy 404.html
+        run: cp -f public/404.html out/404.html
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
