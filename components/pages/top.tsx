@@ -55,6 +55,7 @@ function TopPage() {
                 fontSize: `2rem`,
             }}>
                 <h1>Muscari Server</h1>
+                <h3>Season 10 Ended!</h3>
             </div>
             <Button onClick={() => history.push('/join/1')}>
                 今すぐ参加!!

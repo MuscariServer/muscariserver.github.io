@@ -43,6 +43,8 @@ const month_item = {
     20201016: { text: 'シーズン9開始' },
 
     20201222: { text: 'シーズン9終了' },
+
+    20210923: { text: 'シーズン10終了\n新しくModサーバー開始予定'}
 }
 
 function getTileContent({ date, view }) {
