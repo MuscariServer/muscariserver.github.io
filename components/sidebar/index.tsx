@@ -82,6 +82,7 @@ const ToolTip = styled.div`
     position: relative;
     opacity: 0;
     background: rgba(37, 37, 38, 0.5);
+    color: #fff;
     border-radius: 5px;
     padding: 10px;
     left: 20px;
