@@ -22,7 +22,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
     z-index: 99;
     position: fixed;
     top: 0;
-    background: #11101D;
+    background: #1C1C1C;
     width: ${({ sidebar }) => (sidebar ? '400px' : '80px')};
     transition: 0.5s;
 `
@@ -70,7 +70,7 @@ const MenuItem = styled(Link)`
     padding: 5px;
     transition: all 0.3s ease;
     &:hover {
-        background: #999;
+        background: #2D2D30;
         transition: all 0.3s ease;
         border-radius: 5px;
     }
@@ -81,7 +81,7 @@ const ToolTip = styled.div`
     visibility: hidden;
     position: relative;
     opacity: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(37, 37, 38, 0.5);
     border-radius: 5px;
     padding: 10px;
     left: 20px;
