@@ -58,7 +58,7 @@ function TopPage() {
                 <h3>Season 10 Ended!</h3>
             </div>
             <Button onClick={() => history.push('/join/1')}>
-                今すぐ参加!!
+                Coming soon...
             </Button>
         </motion.div>
     )
