@@ -1,15 +1,12 @@
 import React from "react";
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
     useParams,
     useHistory
 } from "react-router-dom";
 
 import { AnimatePresence, motion } from "framer-motion";
 import styled from "styled-components";
+import { Modpack_data } from "../data/current";
 
 const DIV = styled.div`
     display: inline-block;
@@ -63,8 +60,8 @@ function Join() {
             break;
         case 5:
             image = "images/download.jpg";
-            message = "(※これは適当に拾ってきたダウンロードボタンの画像です)\nここからModPackのzipファイルをダウンロードします。"
-            href = "https://github.com/Naini0712/Modserver_GDLauncher/raw/1.1/Muscari_S10_r-1.1.zip"
+            message = "上の画像からModPackのzipファイルをダウンロードします。"
+            href = Modpack_data.zip;
             break;
         case 6:
             image = "images/GDL/GD3.png";

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Image from 'next/image'
 
 const Items = styled.div`
     margin: 20px;

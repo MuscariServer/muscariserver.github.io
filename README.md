@@ -1,7 +1,5 @@
 # Muscari Web
-MuscariサーバーのWebページのtypescript移植版<br>
-いろいろ変えてある<br>
-TypeScriptの練習に使われるMuscariWeb
+MuscariサーバーのWebページのtypescript移植版リメイク<br>
 
 ```bash
 npm run dev

@@ -1,14 +1,10 @@
 import styled from 'styled-components'
 import {
-    BrowserRouter as Router,
-    Route,
-    Switch,
-    useParams,
     useHistory,
-    useLocation,
 } from 'react-router-dom';
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Modpack_data } from '../data/current';
 
 const Button = styled.button`
     background-color: transparent;
@@ -55,10 +51,10 @@ function TopPage() {
                 fontSize: `2rem`,
             }}>
                 <h1>Muscari Server</h1>
-                <h3>Season 10 Ended!</h3>
+                <h3>Current ModPack: { Modpack_data.name }</h3>
             </div>
             <Button onClick={() => history.push('/join/1')}>
-                Coming soon...
+                今すぐ参加!!
             </Button>
         </motion.div>
     )

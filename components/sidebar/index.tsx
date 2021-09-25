@@ -1,13 +1,12 @@
 import React, { FC, useState } from 'react';
 import { Link } from 'react-router-dom';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 
 // import Icons from 'react-icons'
 import { HiOutlineMenu } from 'react-icons/hi';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import { AiOutlineHome } from 'react-icons/ai';
-import { GiAnvilImpact } from 'react-icons/gi';
 import { AiOutlineImport } from 'react-icons/ai';
 import { BsCalendar } from 'react-icons/bs'
 import { FaDonate } from 'react-icons/fa';
@@ -22,7 +21,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
     z-index: 99;
     position: fixed;
     top: 0;
-    background: #1C1C1C;
+    background: #252526;
     width: ${({ sidebar }) => (sidebar ? '400px' : '80px')};
     transition: 0.5s;
 `
@@ -70,7 +69,7 @@ const MenuItem = styled(Link)`
     padding: 5px;
     transition: all 0.3s ease;
     &:hover {
-        background: #2D2D30;
+        background: #505050;
         transition: all 0.3s ease;
         border-radius: 5px;
     }
@@ -158,13 +157,6 @@ const Sidebar: FC = () => {
                                 <Name sidebar={sidebar} visible={sidebarV}>トップ</Name>
                             </MenuItem>
                             <ToolTip>トップ</ToolTip>
-                        </W>
-                        <W sidebar={sidebar}>
-                            <MenuItem to="/mods">
-                                <GiAnvilImpact />
-                                <Name sidebar={sidebar} visible={sidebarV}>導入Mod</Name>
-                            </MenuItem>
-                            <ToolTip>導入Mod</ToolTip>
                         </W>
                         <W sidebar={sidebar}>
                             <MenuItem to="/join/1">

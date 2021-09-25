@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import styled from 'styled-components';
-import Image from 'next/image'
 
 const DIV = styled.div`
     width: 1500px;
     overflow-y: auto;
-    height: 100vh;
+    height: 90vh;
     background-color: rgba(0, 0, 0, 0.5);
     position: center;
     text-align: center;
