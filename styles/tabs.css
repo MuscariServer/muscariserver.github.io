@@ -22,7 +22,7 @@
 .react-tabs__tab--selected {
     background: rgba(255, 255, 255, 0.3);
     border-color: #aaa;
-    color: black;
+    color: white;
 }
   
 .react-tabs__tab--disabled {
