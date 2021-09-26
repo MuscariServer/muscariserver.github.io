@@ -21,7 +21,8 @@ function Devs() {
         <motion.div style={{
             padding: '1em',
             width: '100%',
-            height: '100%',
+            height: '90vh',
+            overflowY: 'scroll',
         }}
             animate={{
                 opacity: 1

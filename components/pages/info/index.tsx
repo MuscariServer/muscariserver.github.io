@@ -28,12 +28,11 @@ function Info() {
 
             style={{
                 textAlign: 'center',
-                display: 'inline-block',
                 position: 'absolute',
                 top: '10px',
                 color: `#fff`,
                 fontSize: `1rem`,
-                overflow: 'auto',
+                overflowY: 'hidden',
                 verticalAlign: 'top',
             }}
         >
