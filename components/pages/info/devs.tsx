@@ -58,6 +58,11 @@ function Devs() {
                     <td>Game Designer</td>
                     <td style={{ fontSize: '2em' }}>Dori_And_Anahita</td>
                 </tr>
+                <tr style={{ backgroundColor: '#d3ffcf' }}>
+                    <td><ICON src="https://cravatar.eu/helmavatar/eight_y_88/150.png"></ICON></td>
+                    <td>Developer</td>
+                    <td style={{ fontSize: '2em' }}>eight_y_88</td>
+                </tr>
                 <tr style={{ backgroundColor: '#cfd6ff' }}>
                     <td><ICON src="https://cravatar.eu/helmavatar/enoshun/150.png"></ICON></td>
                     <td>Game Designer</td>
