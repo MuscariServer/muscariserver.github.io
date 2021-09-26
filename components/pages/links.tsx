@@ -54,6 +54,9 @@ function Links() {
                 <Items>
                     <a href="https://forms.gle/2GVBaVZKpyjoHhGu8"><img src="images/links/google-forms.png" width={200} height={200} /><br />お問い合わせ</a>
                 </Items>
+                <Items>
+                    <a href="https://github.com/MuscariServer"><img src="images/links/github.png" width={200} height={200} /><br />Github</a>
+                </Items>
             </DIV>
         </motion.div>
     )
