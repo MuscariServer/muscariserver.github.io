@@ -3,6 +3,7 @@ import useHistory from 'react-router-dom';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Modpack_data } from '../data/current';
+import { muscari_Settings } from '../data/settings';
 
 const Button = styled.button`
     background-color: transparent;
@@ -48,7 +49,7 @@ function TopPage() {
                 color: `#fff`,
                 fontSize: `2rem`,
             }}>
-                <h1>Muscari Server</h1>
+                <h1>{ muscari_Settings.name }</h1>
                 <h3>Current ModPack: { Modpack_data.name }</h3>
             </div>
             <Button onClick={() => history.push('/join/1')}>
