@@ -2,17 +2,14 @@ import { motion } from 'framer-motion';
 import moment from 'moment';
 import React from 'react';
 import Calendar from 'react-calendar'
-
-const month_item = {
-    20210718: { text: 'エンド開放\nドラゴンレイド' },
-}
+import { Event_data } from '../data/events';
 
 function getTileContent({ date, view }) {
     if (view === 'month') {
         const targetDate = moment(date).format('YYYYMMDD')
 
-        return month_item[targetDate] && month_item[targetDate].text ?
-            month_item[targetDate].text.split('\n').map((str, index) => (
+        return Event_data[targetDate] && Event_data[targetDate].text ?
+            Event_data[targetDate].text.split('\n').map((str, index) => (
                 <React.Fragment key={index}><br />{str}</React.Fragment>
             ))
             : null

@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import {
-    useHistory,
-} from 'react-router-dom';
+import useHistory from 'react-router-dom';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Modpack_data } from '../data/current';
