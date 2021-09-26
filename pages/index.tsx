@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Muscari Server</title>
-        <meta name="description" content="Muscariさーばー." />
+        <meta name="description" content="Muscariサーバー. Muscari Communityは、選りすぐりのMod、独自のレシピ、独自の仕様からなるのんびりとしたマイクライフを提供するサーバーです。" />
         <link rel="shortcut icon" href='https://muscari.f5.si/images/icon/favicon/favicon.ico' />
         <link rel="apple-touch-icon" href='https://muscari.f5.si/images/icon/apple/apple-icon.png' />
       </Head>
