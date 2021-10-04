@@ -1,6 +1,8 @@
 # Muscari Web
 MuscariサーバーのWebページのtypescript移植版リメイク<br>
 
+作ったのはeightなので問題あったらeightまで
+
 ```bash
 npm run dev
 # or
