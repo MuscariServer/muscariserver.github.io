@@ -47,23 +47,25 @@ function Join(text: string, pageID: number) {
         image = GDLauncher[pageID].image;
         message = GDLauncher[pageID].message;
         href = GDLauncher[pageID].href;
-        if (GDLauncher[pageID + 1] !== undefined) {
+        if (GDLauncher[(pageID + 1)] !== undefined) {
             boolG = true;
-        } else if (GDLauncher[pageID - 1] !== undefined) {
+        }
+        if (GDLauncher[(pageID - 1)] !== undefined) {
             boolB = true;
         }
     } else if (text === "cf") {
         image = CurseForge[pageID].image;
         message = CurseForge[pageID].message;
         href = CurseForge[pageID].href;
-        if (CurseForge[pageID + 1] !== undefined) {
+        if (CurseForge[(pageID + 1)] !== undefined) {
             boolG = true;
-        } else if (CurseForge[pageID - 1] !== undefined) {
+        }
+        if (CurseForge[(pageID - 1)] !== undefined) {
             boolB = true;
-        } 
+        }
     } else {
         visible = false;
-        message = "当サーバーでは、Modの導入にGDLauncher及びCurseForgeを使用しています。\n使用したいランチャーを選んで、参加方法へ進んでください。";
+        message = "当サーバーでは、Modの導入にGDLauncherもしくはCurseForgeを使用しています。\n使用したいランチャーを選んで、参加方法へ進んでください。";
     }
 
     
@@ -112,10 +114,10 @@ function Join(text: string, pageID: number) {
                         transform: 'scale(-1, 1)',
                         left: '25%',
                     }} onClick={() => {
-                        if (boolB) {
-                            history.push("/join/" + text + "/" + (pageID - 1));
+                        if (boolB && visible) {
+                            history.push("/join/" + text + "=" + (pageID - 1));
                         }
-                    }} className="shadow" visible={!(!boolB || !visible)}>‣</DIV>
+                    }} className="shadow" visible={boolB && visible}>‣</DIV>
                     <div style={{
                         display: 'inline-block',
                         margin: '10px'
@@ -125,9 +127,10 @@ function Join(text: string, pageID: number) {
                         }
                         <div id="description" style={{
                             background: 'rgba(0, 0, 0, 0.5)',
-                            width: '700px',
+                            width: '750px',
                             padding: '20px',
                             textAlign: 'center',
+                            display: 'block',
                         }}>
                             {
                                 message.split('\n').map((str, index) => (
@@ -139,10 +142,10 @@ function Join(text: string, pageID: number) {
                     <DIV style={{
                         right: '25%',
                     }} onClick={() => {
-                        if (boolG) {
-                            history.push("/join/" + text + "/" + (pageID + 1));
+                        if (boolG && visible) {
+                            history.push("/join/" + text + "=" + (pageID + 1));
                         }
-                    }} className="shadow" visible={!(!boolG || !visible)}>‣</DIV>
+                    }} className="shadow" visible={boolG && visible}>‣</DIV>
                 </div>
             </AnimatePresence>
         </motion.div>

@@ -6,6 +6,26 @@ import {
 } from "react-router-dom";
 import Join from "./join/join";
 
+const Button = styled.button`
+    background-color: transparent;
+    border: 2px solid #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;   
+    height: 4rem;
+    width: 20rem;
+    text-shadow:  2px  2px 10px #777 ,
+               -2px  2px 10px #777 ,
+                2px -2px 10px #777 ,
+               -2px -2px 10px #777;
+    transition: all .3s;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+`
+
 function JoinSelect() {
     const history = useHistory();
     const { page } = useParams();
@@ -41,7 +61,14 @@ function JoinSelect() {
             }}>
                 参加方法
             </h1>
-            { Join(text.split("=")[0], parseInt(text.split("=")[1])) }
+            <div style={{
+                textAlign: 'center',
+            }}>
+                <Button onClick={() => history.push("/join/gdl=1")}>GDLauncher</Button>
+                <Button onClick={() => history.push("/join/cf=1")}>CurseForge</Button>
+            </div>
+
+            {Join(text.split("=")[0], parseInt(text.split("=")[1]))}
         </motion.div>
     );
 }
