@@ -159,7 +159,7 @@ const Sidebar: FC = () => {
                             <ToolTip>トップ</ToolTip>
                         </W>
                         <W sidebar={sidebar}>
-                            <MenuItem to="/join/1">
+                            <MenuItem to="/join">
                                 <AiOutlineImport />
                                 <Name sidebar={sidebar} visible={sidebarV}>参加方法</Name>
                             </MenuItem>

@@ -5,10 +5,10 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import TopPage from '../components/pages/top'
 import Links from '../components/pages/links'
 import Donate from '../components/pages/donate'
-import Join from '../components/pages/join'
 import Recruit from '../components/pages/recruit'
 import Events from '../components/pages/events'
 import Info from '../components/pages/info'
+import JoinSelect from '../components/pages/join'
 
 export default function Home() {
   return (
@@ -32,7 +32,8 @@ export default function Home() {
         }} className={styles.container}>
             <Switch>
               <Route path="/" exact component={TopPage} />
-              <Route path="/join/:page" component={Join} />
+              <Route path="/join/:page" component={JoinSelect} />
+              <Route path="/join" component={JoinSelect} />
               <Route path="/events" component={Events} />
               <Route path="/donate" component={Donate} />
               <Route path="/info" component={Info} />

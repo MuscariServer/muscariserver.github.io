@@ -52,7 +52,7 @@ function TopPage() {
                 <h1>{ muscari_Settings.name }</h1>
                 <h3>Current ModPack: { Modpack_data.name }</h3>
             </div>
-            <Button onClick={() => history.push('/join/1')}>
+            <Button onClick={() => history.push('/join')}>
                 今すぐ参加!!
             </Button>
         </motion.div>
