@@ -22,7 +22,7 @@ export default function Home() {
       <HashRouter>
         <Sidebar></Sidebar>
         <div style={{
-          backgroundImage: `linear-gradient(transparent, 90% , white), url(images/background/background.png)`,
+          backgroundImage: `linear-gradient(transparent, 90% , white), url(images/background/skybees.png)`,
           backgroundRepeat: `no-repeat`,
           backgroundPosition: `center`,
           backgroundSize: `cover`,
