@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 import {
     useParams,
@@ -30,14 +30,9 @@ function JoinSelect() {
     const history = useHistory();
     const { page } = useParams();
     let text = page as string;
-    let bool = false;
     if (text === undefined) {
         text = "=";
-    } else if (text.startsWith("gdl")) {
-        bool = true;
-    } else if (text.startsWith("cf")) {
-        bool = true;
-    } else {
+    } else if (!(text.startsWith("gdl") || text.startsWith("cf"))) {
         history.push("/join");
     }
     return (
