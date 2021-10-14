@@ -6,12 +6,11 @@ const Items = styled.div`
     margin: 20px;
     font-size: 1.5em;
     color: white;
-    border: 2px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 250px;
     width: 250px;
     display: inline-block;
-    background-color: rgba(111, 111, 111, 0.5);
+    background-color: rgba(255, 255, 255 , 0.5);
     padding: 5px;
 `
 
