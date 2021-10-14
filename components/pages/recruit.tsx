@@ -103,13 +103,13 @@ function Recruit() {
                 <h1>開発陣募集</h1>
                 <div>
                     <Item>
-                        <Image src={'images/recruit/mod.png'} width={150} height={150} />
+                        <Image src={'images/recruit/mod.png'} alt={"Modの知識"} />
                         <OverRay>
                             <Text>多くのModに精通しているプレイヤーは僅かな為、幅広いModに強い方をお待ちしております。</Text>
                         </OverRay>
                     </Item>
                     <Item>
-                        <Image src={'images/recruit/program.png'} width={150} height={150} />
+                        <Image src={'images/recruit/program.png'} alt={"プログラミング能力"} />
                         <OverRay>
                             <Text>
                                 既存のModやプラグインのみではカバーできない問題が発生した場合、
@@ -118,7 +118,7 @@ function Recruit() {
                         </OverRay>
                     </Item>
                     <Item>
-                        <Image src={'images/recruit/hassou.png'} width={150} height={150} />
+                        <Image src={'images/recruit/hassou.png'} alt={"発想力"} />
                         <OverRay>
                             <Text>イベントや新しいシステムの発案など、柔軟な発想ができる方をお待ちしております。</Text>
                         </OverRay>
@@ -126,7 +126,7 @@ function Recruit() {
                 </div>
                 <div>
                     <Item>
-                        <Image src={'images/recruit/design.png'} width={150} height={150} />
+                        <Image src={'images/recruit/design.png'} alt={"デザイン力"} />
                         <OverRay>
                             <Text>
                                 追加アイテムのテクスチャやイラストが描ける方、
@@ -135,13 +135,13 @@ function Recruit() {
                         </OverRay>
                     </Item>
                     <Item>
-                        <Image src={'images/recruit/en.png'} width={150} height={150} />
+                        <Image src={'images/recruit/en.png'} alt={"熱意"} />
                         <OverRay>
                             <Text>サーバーに熱意を持って参加したい方、開発陣への参加をお待ちしております。</Text>
                         </OverRay>
                     </Item>
                     <Item>
-                        <Image src={'images/recruit/alpha.png'} width={150} height={150} />
+                        <Image src={'images/recruit/alpha.png'} alt={"プラスアルファ"} />
                         <OverRay>
                             <Text>
                                 当サーバーは求める人材への多様性を尊重します。他にも素晴らしいアピールポイントがある方をお待ちしております。
