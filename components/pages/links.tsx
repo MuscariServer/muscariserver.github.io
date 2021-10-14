@@ -35,26 +35,27 @@ function Links() {
                 textAlign: 'center',
             }}
         >
+            {/* eslint-disable @next/next/no-img-element */}
             <DIV>
                 <Items>
-                    <a href="https://minecraft.jp/servers/muscari.fun"><img src="images/links/Diamond.png" width={200} height={200} /><br />Minecraft.jp</a>
+                    <a href="https://minecraft.jp/servers/muscari.fun"><img src={"images/links/Diamond.png"} width={200} height={200} alt={"JMS"} /><br />Minecraft.jp</a>
                 </Items>
                 <Items>
-                    <a href="https://monocraft.net/servers/kypYX49aMGbHh1i47yH5"><img src="images/links/monocraft.png" width={200} height={200} /><br />Monocraft</a>
+                    <a href="https://monocraft.net/servers/kypYX49aMGbHh1i47yH5"><img src={"images/links/monocraft.png"} width={200} height={200} alt={"Monocraft"} /><br />Monocraft</a>
                 </Items>
                 <Items>
-                    <a href="https://twitter.com/taisa_ism"><img src="images/links/twitter.png" width={200} height={200} /><br />Twitter</a>
+                    <a href="https://twitter.com/taisa_ism"><img src={"images/links/twitter.png"} width={200} height={200} alt={"Twitter"} /><br />Twitter</a>
                 </Items>
             </DIV>
             <DIV>
                 <Items>
-                    <a href="https://discord.gg/mTbgeP8"><img src="images/links/discord.png" width={200} height={200} /><br />Discord</a>
+                    <a href="https://discord.gg/mTbgeP8"><img src={"images/links/discord.png"} width={200} height={200} alt={"Discord"} /><br />Discord</a>
                 </Items>
                 <Items>
-                    <a href="https://forms.gle/2GVBaVZKpyjoHhGu8"><img src="images/links/google-forms.png" width={200} height={200} /><br />お問い合わせ</a>
+                    <a href="https://forms.gle/2GVBaVZKpyjoHhGu8"><img src={"images/links/google-forms.png"} width={200} height={200} alt={"Inquiry"} /><br />お問い合わせ</a>
                 </Items>
                 <Items>
-                    <a href="https://github.com/MuscariServer"><img src="images/links/github.png" width={200} height={200} /><br />Github</a>
+                    <a href="https://github.com/MuscariServer"><img src={"images/links/github.png"} width={200} height={200} alt={"Github"} /><br />Github</a>
                 </Items>
             </DIV>
         </motion.div>
