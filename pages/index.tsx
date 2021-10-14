@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="apple-touch-icon" href='https://muscari.f5.si/images/icon/apple/apple-icon.png' />
       </Head>
       <HashRouter>
-        <Sidebar></Sidebar>
+        <Sidebar/>
         <div style={{
           backgroundImage: `linear-gradient(transparent, 90% , white), url(images/background/skybees.png)`,
           backgroundRepeat: `no-repeat`,
