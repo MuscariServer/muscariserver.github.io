@@ -15,11 +15,47 @@ const Item = styled.div`
     display: inline-block;
     margin: 1rem;
     vertical-align: top;
-    position: center;
-    border-radius: 10px;
-    width: 400px;
+    position: relative;
+    width: 275px;
     height: 275px;
-    background-color: rgba(255,255,255,0.5);
+    border-radius: 100%;
+    border: black;
+`
+
+const OverRay = styled.div`
+    position: absolute;
+    top: 12px;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 200%;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    &:hover {
+        opacity: 1;
+    }
+`
+
+const Image = styled.img`
+    display: block;
+    width: 100%;
+    height: auto;
+`
+
+const Text = styled.div`
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 `
 
 const Button = styled.button`
@@ -67,68 +103,50 @@ function Recruit() {
                 <h1>開発陣募集</h1>
                 <div>
                     <Item>
-                        <img src={'images/recruit/mod.png'} width={150} height={150} />
-                        <ul style={{
-                            fontSize: `15px`,
-                            color: `#000`
-                        }}>
-                            <li>多くのModに精通しているプレイヤーは僅かな為、<br />幅広いModに強い方をお待ちしております。</li>
-                        </ul>
+                        <Image src={'images/recruit/mod.png'} width={150} height={150} />
+                        <OverRay>
+                            <Text>多くのModに精通しているプレイヤーは僅かな為、幅広いModに強い方をお待ちしております。</Text>
+                        </OverRay>
                     </Item>
                     <Item>
-                        <img src={'images/recruit/program.png'} width={150} height={150} />
-                        <ul style={{
-                            fontSize: `15px`,
-                            color: `#000`
-                        }}>
-                            <li>
-                                既存のModやプラグインのみでは<br />カバーできない問題が発生した場合、<br />
-                                独自のModやプラグインを作成してくれる<br />方をお待ちしております。
-                            </li>
-                        </ul>
+                        <Image src={'images/recruit/program.png'} width={150} height={150} />
+                        <OverRay>
+                            <Text>
+                                既存のModやプラグインのみではカバーできない問題が発生した場合、
+                                独自のModやプラグインを作成してくれる方をお待ちしております。
+                            </Text>
+                        </OverRay>
                     </Item>
                     <Item>
-                        <img src={'images/recruit/hassou.png'} width={150} height={150} />
-                        <ul style={{
-                            fontSize: `15px`,
-                            color: `#000`
-                        }}>
-                            <li>イベントや新しいシステムの発案など、<br />柔軟な発想ができる方をお待ちしております。</li>
-                        </ul>
+                        <Image src={'images/recruit/hassou.png'} width={150} height={150} />
+                        <OverRay>
+                            <Text>イベントや新しいシステムの発案など、柔軟な発想ができる方をお待ちしております。</Text>
+                        </OverRay>
                     </Item>
                 </div>
                 <div>
                     <Item>
-                        <img src={'images/recruit/design.png'} width={150} height={150} />
-                        <ul style={{
-                            fontSize: `15px`,
-                            color: `#000`
-                        }}>
-                            <li>
-                                追加アイテムのテクスチャやイラストが描ける方、<br />
+                        <Image src={'images/recruit/design.png'} width={150} height={150} />
+                        <OverRay>
+                            <Text>
+                                追加アイテムのテクスチャやイラストが描ける方、
                                 建築が得意な方をお待ちしております。
-                            </li>
-                        </ul>
+                            </Text>
+                        </OverRay>
                     </Item>
                     <Item>
-                        <img src={'images/recruit/en.png'} width={150} height={150} />
-                        <ul style={{
-                            fontSize: `15px`,
-                            color: `#000`
-                        }}>
-                            <li>サーバーに熱意を持って参加したい方、<br />開発陣への参加をお待ちしております。</li>
-                        </ul>
+                        <Image src={'images/recruit/en.png'} width={150} height={150} />
+                        <OverRay>
+                            <Text>サーバーに熱意を持って参加したい方、開発陣への参加をお待ちしております。</Text>
+                        </OverRay>
                     </Item>
                     <Item>
-                        <img src={'images/recruit/alpha.png'} width={150} height={150} />
-                        <ul style={{
-                            fontSize: `15px`,
-                            color: `#000`
-                        }}>
-                            <li>
-                                当サーバーは求める人材への<br />多様性を尊重します。<br />他にも素晴らしいアピールポイントが<br />ある方をお待ちしております。
-                            </li>
-                        </ul>
+                        <Image src={'images/recruit/alpha.png'} width={150} height={150} />
+                        <OverRay>
+                            <Text>
+                                当サーバーは求める人材への多様性を尊重します。他にも素晴らしいアピールポイントがある方をお待ちしております。
+                            </Text>
+                        </OverRay>
                     </Item>
                 </div>
                 <a href="https://forms.gle/YHTgZcKtEUjchM2F9">
