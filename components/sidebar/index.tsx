@@ -15,7 +15,6 @@ import { HiOutlineCode } from 'react-icons/hi';
 import { BiLinkExternal } from 'react-icons/bi';
 
 const SidebarNav = styled.div<{ sidebar: boolean }>`
-    width: 250px;
     height: 100vh;
     padding: 6px 14px;
     z-index: 99;
@@ -200,7 +199,7 @@ const Sidebar: FC = () => {
                             </MenuItem>
                             <ToolTip>リンク集</ToolTip>
                         </W>
-                        <Discord sidebar={sidebar} visible={sidebarV} className="discord" src="https://discord.com/widget?id=419146900441137173&theme=dark" width="350" height="420" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></Discord>
+                        <Discord sidebar={sidebar} visible={sidebarV} className="discord" src="https://discord.com/widget?id=419146900441137173&theme=dark" width="350" height="420" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" />
                     </SidebarMenuWrap>
                 </SidebarWrap>
             </SidebarNav>
