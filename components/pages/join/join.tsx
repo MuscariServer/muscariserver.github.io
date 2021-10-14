@@ -1,6 +1,5 @@
 import React from "react";
 import {
-    useParams,
     useHistory
 } from "react-router-dom";
 
@@ -35,7 +34,7 @@ function Join(text: string, pageID: number) {
     const history = useHistory();
     
     let image = "";
-    let message = "";
+    let message;
     let href = "";
 
     let boolG = false;
@@ -69,7 +68,7 @@ function Join(text: string, pageID: number) {
     }
 
     
-    let imageTag = (<></>);
+    let imageTag: JSX.Element;
 
     if (href !== "" && visible) {
         imageTag = (
