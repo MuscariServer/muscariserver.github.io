@@ -5,6 +5,7 @@ import {
     useHistory
 } from "react-router-dom";
 import Join from "./join/join";
+import {CurseForge, GDLauncher} from "../data/join";
 
 const Button = styled.button`
     background-color: transparent;
@@ -35,6 +36,19 @@ function JoinSelect() {
     } else if (!(text.startsWith("gdl") || text.startsWith("cf"))) {
         history.push("/join");
     }
+    const arrayImages = [];
+
+    for (let i = 1; GDLauncher[i] !== undefined; i++) {
+        // @ts-ignore
+        // eslint-disable-next-line @next/next/no-img-element
+        arrayImages.push(<img src={GDLauncher[i].image}  alt="Cache" style={{ display: 'none' }}/>);
+    }
+
+    for (let i = 1; CurseForge[i] !== undefined; i++) {
+        // @ts-ignore
+        // eslint-disable-next-line @next/next/no-img-element
+        arrayImages.push(<img src={CurseForge[i].image}  alt="Cache" style={{ display: 'none' }}/>);
+    }
     return (
         <motion.div
             animate={{
@@ -64,6 +78,10 @@ function JoinSelect() {
             </div>
 
             {Join(text.split("=")[0], parseInt(text.split("=")[1]))}
+
+            {(() => {
+                return <div>{ arrayImages }</div>
+            })}
         </motion.div>
     );
 }
