@@ -20,7 +20,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
     z-index: 99;
     position: fixed;
     top: 0;
-    background: #252526;
+    background: rgba(37, 37, 38, 0.75);
     width: ${({ sidebar }) => (sidebar ? '400px' : '80px')};
     transition: 0.5s;
 `
@@ -68,7 +68,7 @@ const MenuItem = styled(Link)`
     padding: 5px;
     transition: all 0.3s ease;
     &:hover {
-        background: #505050;
+        background: rgba(200, 200, 200, 0.25);
         transition: all 0.3s ease;
         border-radius: 5px;
     }
