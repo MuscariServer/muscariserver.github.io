@@ -59,6 +59,7 @@ const SidebarMenuWrap = styled.li`
     display: inline-block;
     border-radius: 5px;
     transition: all 0.5s ease;
+    text-align: left;
 `;
 
 const MenuItem = styled(Link)`
