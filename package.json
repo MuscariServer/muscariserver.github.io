@@ -2,38 +2,42 @@
   "name": "muscari.f5.si",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev -p 8000",
-    "build": "next build && next export",
-    "lint": "eslint --ext .ts,.js,.tsx . && prettier --check \"./**/*.ts\"",
-    "lint:fix": "eslint --ext .ts,.js,.tsx . --fix && prettier --write \"./**/*.ts\"",
-    "start": "next start",
-    "test": "jest",
-    "export": "next export"
-  },
   "dependencies": {
-    "antd": "^4.16.9",
-    "babel-plugin-transform-require-ignore": "^0.1.1",
-    "dotenv": "^10.0.0",
-    "framer-motion": "^5.0.0",
-    "next": "^12.0.1",
-    "next-transpile-modules": "9.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
     "react": "^17.0.2",
-    "react-calendar": "^3.5.0",
-    "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-ogp": "^0.0.3",
-    "react-router-dom": "^5.2.0",
-    "react-tabs": "^3.2.2",
-    "react-vis": "^1.11.7",
-    "sass": "^1.43.4",
-    "styled-components": "^5.3.3"
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
-  "devDependencies": {
-    "@types/react": "^17.0.33",
-    "eslint": "8.1.0",
-    "eslint-config-next": "12.0.1",
-    "typescript": "^4.4.4"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
