@@ -2003,6 +2003,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-custom-scrollbars@^4.0.9":
+  version "4.0.9"
+  resolved "https://registry.yarnpkg.com/@types/react-custom-scrollbars/-/react-custom-scrollbars-4.0.9.tgz#a2d61f428e84aa3bf114d7bc4f61b22d60a34fca"
+  integrity sha512-Dv3OVJyRiOziq4D5sXNHB1Y9nZIkdazo1XCI4oMAtcxGZeSE8NjubW1qmPenWFiXSFuKNO3fpKR2LhYonNSynQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^17.0.0":
   version "17.0.10"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.10.tgz#d6972ec018d23cf22b99597f1289343d99ea9d9d"
@@ -2025,6 +2032,13 @@
   integrity sha512-RNSXOyb3VyRs/EOGmjBhhGKTbnN6fHWvy5FNLzWfOWOGjgVUKqJZXfpKzLmgoU8h6Hj8mpALj/mbXQASOb92wQ==
   dependencies:
     "@types/history" "*"
+    "@types/react" "*"
+
+"@types/react-tabs@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@types/react-tabs/-/react-tabs-2.3.3.tgz#93536e06d616b98012e0574b9b3e280400152734"
+  integrity sha512-iKnx10tskHi9gpsvEAAJGpytbZXfcCINCFsEeYd9QN0mW7kGcUzh8Llgul1IqmFbKigXI/l3H3ej8ljWak2grw==
+  dependencies:
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^17.0.0":
