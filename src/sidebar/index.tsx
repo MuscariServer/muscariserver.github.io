@@ -47,7 +47,10 @@ const NavIconClose = styled.div<{ sidebar: boolean }>`
     cursor: pointer;
 `
 
-const SidebarWrap = styled.div``;
+const SidebarWrap = styled.div`
+    text-align: left;
+`;
+
 const SidebarMenuWrap = styled.li`
     position: absolute;
     top: 75px;
