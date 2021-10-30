@@ -5,7 +5,6 @@ import {
     useHistory
 } from "react-router-dom";
 import Join from "./join/join";
-import {CurseForge, GDLauncher} from "../data/join";
 
 const Button = styled.button`
     background-color: transparent;
