@@ -2,8 +2,7 @@ import { motion } from 'framer-motion';
 import moment from 'moment';
 import React from 'react';
 import Calendar from 'react-calendar'
-// @ts-ignore
-import { Event_data } from '../data/events';
+import { Event_data } from '../data/event';
 
 // @ts-ignore
 function getTileContent({ date, view }) {

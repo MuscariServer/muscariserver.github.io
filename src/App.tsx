@@ -4,8 +4,8 @@ import './App.css';
 import { HashRouter, Route, Switch } from 'react-router-dom'
 import Sidebar from "./sidebar";
 
-import 'styles/calendar.css'
-import 'styles/tabs.css'
+import './styles/calendar.css'
+import './styles/tabs.css'
 
 import TopPage from './pages/top'
 import Links from './pages/links'
