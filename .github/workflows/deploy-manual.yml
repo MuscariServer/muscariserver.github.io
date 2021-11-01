@@ -1,4 +1,4 @@
-name: Deploy client manually
+name: Deploy manually
 
 on: workflow_dispatch
 
@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 16
       - run: |
           if test -n '${{ secrets.GH_PAGES_BASE_PATH }}'; then
             CLIENT_BASE_PATH='${{ secrets.GH_PAGES_BASE_PATH }}'
